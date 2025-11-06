@@ -27,6 +27,9 @@ const TreasureHunt = () => {
   return (
     <section className="py-20 sm:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-primary/10"></div>
+      
+      {/* Pixelated Dots */}
+      <div className="absolute inset-0 pixelated-dots pixelated-dots-sparse pointer-events-none opacity-40"></div>
 
       <div className="container relative mx-auto px-6 sm:px-8 lg:px-6">
         <div className="text-center mb-16 animate-fade-in">

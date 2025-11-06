@@ -82,45 +82,149 @@
   .pixelated-dots::before {
     content: '';
     position: absolute;
-    width: 8px;
-    height: 8px;
-    border-radius: 2px;
-    opacity: 0.6;
+    width: 4px;
+    height: 4px;
+    border-radius: 1px;
+    opacity: 0.7;
     animation: float 6s ease-in-out infinite;
     box-shadow: 
-      20px 30px 0 hsl(var(--primary)),
-      120px 80px 0 hsl(var(--secondary)),
-      200px 150px 0 hsl(var(--color-orange)),
-      80px 200px 0 hsl(var(--color-green)),
-      300px 100px 0 hsl(var(--primary)),
-      400px 180px 0 hsl(var(--secondary)),
-      500px 50px 0 hsl(var(--color-orange)),
-      600px 220px 0 hsl(var(--color-green)),
-      700px 140px 0 hsl(var(--primary)),
-      150px 280px 0 hsl(var(--secondary)),
-      350px 320px 0 hsl(var(--color-orange)),
-      550px 300px 0 hsl(var(--color-green)),
+      /* Blue Rock Cluster 1 */
+      100px 80px 0 hsl(var(--primary)),
+      104px 80px 0 hsl(var(--primary)),
+      108px 80px 0 hsl(var(--primary)),
+      100px 84px 0 hsl(var(--primary)),
+      104px 84px 0 hsl(var(--primary)),
+      108px 84px 0 hsl(var(--primary)),
+      104px 88px 0 hsl(var(--primary)),
       
-      40px 60px 0 hsl(var(--secondary)),
-      140px 110px 0 hsl(var(--color-orange)),
-      240px 180px 0 hsl(var(--color-green)),
-      340px 130px 0 hsl(var(--primary)),
-      440px 210px 0 hsl(var(--secondary)),
-      540px 80px 0 hsl(var(--color-orange)),
-      640px 250px 0 hsl(var(--color-green)),
-      180px 310px 0 hsl(var(--primary)),
-      380px 350px 0 hsl(var(--secondary)),
-      580px 330px 0 hsl(var(--color-orange));
+      /* Yellow Rock Cluster 1 */
+      300px 150px 0 hsl(var(--secondary)),
+      304px 150px 0 hsl(var(--secondary)),
+      308px 150px 0 hsl(var(--secondary)),
+      312px 150px 0 hsl(var(--secondary)),
+      300px 154px 0 hsl(var(--secondary)),
+      304px 154px 0 hsl(var(--secondary)),
+      308px 154px 0 hsl(var(--secondary)),
+      304px 158px 0 hsl(var(--secondary)),
+      308px 158px 0 hsl(var(--secondary)),
+      
+      /* Orange Rock Cluster 1 */
+      550px 100px 0 hsl(var(--color-orange)),
+      554px 100px 0 hsl(var(--color-orange)),
+      558px 100px 0 hsl(var(--color-orange)),
+      550px 104px 0 hsl(var(--color-orange)),
+      554px 104px 0 hsl(var(--color-orange)),
+      558px 104px 0 hsl(var(--color-orange)),
+      562px 104px 0 hsl(var(--color-orange)),
+      554px 108px 0 hsl(var(--color-orange)),
+      
+      /* Green Rock Cluster 1 */
+      750px 200px 0 hsl(var(--color-green)),
+      754px 200px 0 hsl(var(--color-green)),
+      758px 200px 0 hsl(var(--color-green)),
+      750px 204px 0 hsl(var(--color-green)),
+      754px 204px 0 hsl(var(--color-green)),
+      758px 204px 0 hsl(var(--color-green)),
+      754px 208px 0 hsl(var(--color-green)),
+      
+      /* Blue Rock Cluster 2 */
+      200px 300px 0 hsl(var(--primary)),
+      204px 300px 0 hsl(var(--primary)),
+      208px 300px 0 hsl(var(--primary)),
+      200px 304px 0 hsl(var(--primary)),
+      204px 304px 0 hsl(var(--primary)),
+      208px 304px 0 hsl(var(--primary)),
+      
+      /* Yellow Rock Cluster 2 */
+      450px 250px 0 hsl(var(--secondary)),
+      454px 250px 0 hsl(var(--secondary)),
+      458px 250px 0 hsl(var(--secondary)),
+      450px 254px 0 hsl(var(--secondary)),
+      454px 254px 0 hsl(var(--secondary)),
+      458px 254px 0 hsl(var(--secondary)),
+      462px 254px 0 hsl(var(--secondary)),
+      
+      /* Orange Rock Cluster 2 */
+      650px 350px 0 hsl(var(--color-orange)),
+      654px 350px 0 hsl(var(--color-orange)),
+      658px 350px 0 hsl(var(--color-orange)),
+      650px 354px 0 hsl(var(--color-orange)),
+      654px 354px 0 hsl(var(--color-orange)),
+      658px 354px 0 hsl(var(--color-orange)),
+      
+      /* Green Rock Cluster 2 */
+      850px 180px 0 hsl(var(--color-green)),
+      854px 180px 0 hsl(var(--color-green)),
+      858px 180px 0 hsl(var(--color-green)),
+      850px 184px 0 hsl(var(--color-green)),
+      854px 184px 0 hsl(var(--color-green)),
+      858px 184px 0 hsl(var(--color-green)),
+      862px 184px 0 hsl(var(--color-green)),
+      
+      /* Small Blue Rock */
+      400px 50px 0 hsl(var(--primary)),
+      404px 50px 0 hsl(var(--primary)),
+      400px 54px 0 hsl(var(--primary)),
+      404px 54px 0 hsl(var(--primary)),
+      
+      /* Small Yellow Rock */
+      600px 400px 0 hsl(var(--secondary)),
+      604px 400px 0 hsl(var(--secondary)),
+      600px 404px 0 hsl(var(--secondary)),
+      604px 404px 0 hsl(var(--secondary)),
+      
+      /* Small Orange Rock */
+      150px 180px 0 hsl(var(--color-orange)),
+      154px 180px 0 hsl(var(--color-orange)),
+      150px 184px 0 hsl(var(--color-orange)),
+      154px 184px 0 hsl(var(--color-orange)),
+      
+      /* Small Green Rock */
+      950px 120px 0 hsl(var(--color-green)),
+      954px 120px 0 hsl(var(--color-green)),
+      950px 124px 0 hsl(var(--color-green)),
+      954px 124px 0 hsl(var(--color-green));
   }
   
   .pixelated-dots-sparse::before {
     box-shadow: 
-      100px 50px 0 hsl(var(--primary)),
-      300px 120px 0 hsl(var(--secondary)),
-      500px 80px 0 hsl(var(--color-orange)),
-      700px 150px 0 hsl(var(--color-green)),
-      200px 200px 0 hsl(var(--primary)),
-      400px 250px 0 hsl(var(--secondary)),
-      600px 180px 0 hsl(var(--color-orange));
+      /* Blue Rock Cluster */
+      150px 100px 0 hsl(var(--primary)),
+      154px 100px 0 hsl(var(--primary)),
+      158px 100px 0 hsl(var(--primary)),
+      150px 104px 0 hsl(var(--primary)),
+      154px 104px 0 hsl(var(--primary)),
+      158px 104px 0 hsl(var(--primary)),
+      
+      /* Yellow Rock Cluster */
+      450px 150px 0 hsl(var(--secondary)),
+      454px 150px 0 hsl(var(--secondary)),
+      458px 150px 0 hsl(var(--secondary)),
+      450px 154px 0 hsl(var(--secondary)),
+      454px 154px 0 hsl(var(--secondary)),
+      458px 154px 0 hsl(var(--secondary)),
+      462px 154px 0 hsl(var(--secondary)),
+      
+      /* Orange Rock Cluster */
+      750px 200px 0 hsl(var(--color-orange)),
+      754px 200px 0 hsl(var(--color-orange)),
+      758px 200px 0 hsl(var(--color-orange)),
+      750px 204px 0 hsl(var(--color-orange)),
+      754px 204px 0 hsl(var(--color-orange)),
+      758px 204px 0 hsl(var(--color-orange)),
+      
+      /* Green Rock Cluster */
+      250px 250px 0 hsl(var(--color-green)),
+      254px 250px 0 hsl(var(--color-green)),
+      258px 250px 0 hsl(var(--color-green)),
+      250px 254px 0 hsl(var(--color-green)),
+      254px 254px 0 hsl(var(--color-green)),
+      258px 254px 0 hsl(var(--color-green)),
+      
+      /* Small Orange Rock */
+      600px 80px 0 hsl(var(--color-orange)),
+      604px 80px 0 hsl(var(--color-orange)),
+      600px 84px 0 hsl(var(--color-orange)),
+      604px 84px 0 hsl(var(--color-orange));
   }
 }

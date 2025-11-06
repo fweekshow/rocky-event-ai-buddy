@@ -1,5 +1,9 @@
 import { Button } from "@/components/ui/button";
 import rockyMascot from "@/assets/rocky-mascot.jpg";
+import rockBlue from "@/assets/rock-blue.png";
+import rockOrange from "@/assets/rock-orange.png";
+import rockGreen from "@/assets/rock-green.png";
+import rockYellow from "@/assets/rock-yellow.png";
 
 const Hero = () => {
   return (
@@ -15,6 +19,44 @@ const Hero = () => {
         className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-[120px] animate-float"
         style={{ animationDelay: "1s" }}
       ></div>
+
+      {/* Decorative Rocks */}
+      <img
+        src={rockBlue}
+        alt=""
+        className="absolute top-32 left-[5%] w-24 h-24 opacity-80 animate-float hidden lg:block"
+        style={{ animationDelay: "0.5s" }}
+      />
+      <img
+        src={rockOrange}
+        alt=""
+        className="absolute top-[20%] right-[8%] w-32 h-32 opacity-70 animate-float hidden lg:block"
+        style={{ animationDelay: "1.5s" }}
+      />
+      <img
+        src={rockGreen}
+        alt=""
+        className="absolute bottom-32 left-[10%] w-28 h-28 opacity-75 animate-float hidden lg:block"
+        style={{ animationDelay: "2s" }}
+      />
+      <img
+        src={rockYellow}
+        alt=""
+        className="absolute bottom-[15%] right-[5%] w-24 h-24 opacity-80 animate-float hidden lg:block"
+        style={{ animationDelay: "0.8s" }}
+      />
+      <img
+        src={rockBlue}
+        alt=""
+        className="absolute top-[60%] left-[3%] w-20 h-20 opacity-60 animate-float hidden lg:block"
+        style={{ animationDelay: "1.2s" }}
+      />
+      <img
+        src={rockOrange}
+        alt=""
+        className="absolute bottom-[40%] right-[12%] w-20 h-20 opacity-65 animate-float hidden lg:block"
+        style={{ animationDelay: "2.5s" }}
+      />
 
       <div className="container relative z-10 mx-auto px-6 sm:px-8 lg:px-6 py-20">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">

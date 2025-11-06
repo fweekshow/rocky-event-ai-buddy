@@ -38,7 +38,12 @@ const About = () => {
           <div className="relative">
             {/* Winding Road Path - Desktop */}
             <div className="hidden lg:block absolute left-0 right-0 top-1/2 -translate-y-1/2 h-1">
-              <svg className="w-full h-64" viewBox="0 0 1200 256" preserveAspectRatio="none" style={{ position: 'absolute', top: '-128px' }}>
+              <svg
+                className="w-full h-64"
+                viewBox="0 0 1200 256"
+                preserveAspectRatio="none"
+                style={{ position: "absolute", top: "-128px" }}
+              >
                 <path
                   d="M 0,128 Q 300,50 400,128 T 800,128 Q 1000,180 1200,128"
                   stroke="hsl(var(--primary))"
@@ -58,20 +63,11 @@ const About = () => {
                   <div
                     key={index}
                     className="relative animate-fade-in"
-                    style={{ 
+                    style={{
                       animationDelay: `${index * 0.15}s`,
-                      marginTop: isUp ? '0' : '16rem',
+                      marginTop: isUp ? "0" : "16rem",
                     }}
                   >
-                    {/* Connecting Line */}
-                    <div 
-                      className="absolute left-1/2 -translate-x-1/2 w-0.5 bg-primary/50"
-                      style={{
-                        height: '8rem',
-                        top: isUp ? '100%' : '-8rem',
-                      }}
-                    />
-
                     {/* Icon */}
                     <div className="flex justify-center mb-6">
                       <div className="w-20 h-20 rounded-full bg-card border-4 border-primary flex items-center justify-center text-4xl glow-effect z-10 shadow-lg">

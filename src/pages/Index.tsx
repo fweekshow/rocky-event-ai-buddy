@@ -4,8 +4,7 @@ import About from "@/components/About";
 import AttendeesSection from "@/components/AttendeesSection";
 import TreasureHunt from "@/components/TreasureHunt";
 import SponsorsSection from "@/components/SponsorsSection";
-import BaseSection from "@/components/BaseSection";
-import TokenSection from "@/components/TokenSection";
+import BaseTokenSection from "@/components/BaseTokenSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -21,12 +20,7 @@ const Index = () => {
         <TreasureHunt />
       </section>
       <SponsorsSection />
-      <section id="base">
-        <BaseSection />
-      </section>
-      <section id="token">
-        <TokenSection />
-      </section>
+      <BaseTokenSection />
       <Footer />
     </div>
   );

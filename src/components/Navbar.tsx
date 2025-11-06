@@ -12,7 +12,6 @@ const Navbar = () => {
     { name: "About", href: "#about" },
     { name: "Features", href: "#attendees" },
     { name: "Base", href: "#base" },
-    { name: "Token", href: "#token" },
   ];
 
   useEffect(() => {

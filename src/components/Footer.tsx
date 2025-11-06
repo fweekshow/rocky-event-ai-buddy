@@ -6,7 +6,7 @@ const Footer = () => {
     resources: [
       { name: "Base.org", href: "https://base.org", external: true },
       { name: "Base Batches", href: "https://www.basebatches.xyz", external: true },
-      { name: "Documentation", href: "https://docs.base.org/get-started/base", external: true },
+      { name: "Documentation", href: "#" },
     ],
     social: [
       { name: "Twitter", icon: Twitter, href: "https://x.com/rockyeventagent" },

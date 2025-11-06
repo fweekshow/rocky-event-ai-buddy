@@ -42,7 +42,7 @@ const BaseTokenSection = () => {
             <div className="mt-8 space-y-4 animate-fade-in" style={{ animationDelay: "0.1s" }}>
               {/* Symbol and Contract Address - Single Line */}
               <div className="flex flex-col md:flex-row gap-4 items-stretch">
-                <div className="md:w-32 bg-muted/30 rounded-xl p-4 border border-border flex items-center justify-center">
+                <div className="md:w-32 bg-muted/30 rounded-xl px-4 border border-border flex items-center justify-center">
                   <span className="font-display text-2xl font-bold text-secondary">$ROCKY</span>
                 </div>
                 <div className="flex-1 flex flex-col sm:flex-row gap-3">

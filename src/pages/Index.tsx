@@ -5,6 +5,7 @@ import AttendeesSection from "@/components/AttendeesSection";
 import TreasureHunt from "@/components/TreasureHunt";
 import SponsorsSection from "@/components/SponsorsSection";
 import BaseTokenSection from "@/components/BaseTokenSection";
+import VideoPresentation from "@/components/VideoPresentation";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -21,6 +22,7 @@ const Index = () => {
       </section>
       <SponsorsSection />
       <BaseTokenSection />
+      <VideoPresentation />
       <Footer />
     </div>
   );

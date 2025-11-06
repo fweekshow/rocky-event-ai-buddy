@@ -36,75 +36,57 @@ const About = () => {
 
         <div className="max-w-6xl mx-auto px-4 sm:px-8">
           <div className="relative">
-            {/* Curved Path Timeline - Desktop */}
-            <div className="hidden lg:block relative" style={{ minHeight: '600px' }}>
-              {/* Curved Dotted Path */}
-              <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid meet">
+            {/* Winding Road Path - Desktop */}
+            <div className="hidden lg:block absolute left-0 right-0 top-1/2 -translate-y-1/2 h-1">
+              <svg className="w-full h-64" viewBox="0 0 1200 256" preserveAspectRatio="none" style={{ position: 'absolute', top: '-128px' }}>
                 <path
-                  d="M 100,300 Q 250,150 400,300 T 700,300 Q 850,450 1100,300"
+                  d="M 0,128 Q 300,50 400,128 T 800,128 Q 1000,180 1200,128"
                   stroke="hsl(var(--primary))"
                   strokeWidth="3"
                   fill="none"
-                  strokeDasharray="12,8"
-                  opacity="0.6"
+                  strokeDasharray="10,5"
+                  opacity="0.5"
                 />
               </svg>
+            </div>
 
-              {/* Timeline Items with Icons on Path */}
-              <div className="relative h-full">
-                {timeline.map((item, index) => {
-                  const isUp = index % 2 === 0;
-                  // Position icons on the curve path
-                  const iconPositions = [
-                    { left: '8%', top: '50%' },      // Start
-                    { left: '33%', top: '25%' },     // Peak (curve up)
-                    { left: '58%', top: '50%' },     // Middle
-                    { left: '91%', top: '75%' }      // End (curve down)
-                  ];
-                  
-                  return (
-                    <div
-                      key={index}
-                      className="absolute animate-fade-in"
-                      style={{ 
-                        animationDelay: `${index * 0.15}s`,
-                        left: iconPositions[index].left,
-                        top: iconPositions[index].top,
-                        transform: 'translate(-50%, -50%)',
+            {/* Horizontal Timeline - Desktop */}
+            <div className="hidden lg:grid lg:grid-cols-4 gap-8 relative">
+              {timeline.map((item, index) => {
+                const isUp = index % 2 === 0;
+                return (
+                  <div
+                    key={index}
+                    className="relative animate-fade-in"
+                    style={{ 
+                      animationDelay: `${index * 0.15}s`,
+                      marginTop: isUp ? '0' : '16rem',
+                    }}
+                  >
+                    {/* Connecting Line */}
+                    <div 
+                      className="absolute left-1/2 -translate-x-1/2 w-0.5 bg-primary/50"
+                      style={{
+                        height: '8rem',
+                        top: isUp ? '100%' : '-8rem',
                       }}
-                    >
-                      {/* Icon on Dotted Line */}
-                      <div className="relative z-10">
-                        <div className="w-20 h-20 rounded-full bg-card border-4 border-primary flex items-center justify-center text-4xl glow-effect shadow-lg">
-                          {item.icon}
-                        </div>
-                      </div>
+                    />
 
-                      {/* Connecting Line to Card */}
-                      <div 
-                        className="absolute left-1/2 -translate-x-1/2 w-0.5 bg-primary/50 z-0"
-                        style={{
-                          height: '120px',
-                          top: isUp ? '-120px' : '80px',
-                        }}
-                      />
-
-                      {/* Content Card */}
-                      <div 
-                        className="absolute left-1/2 -translate-x-1/2 w-64"
-                        style={{
-                          top: isUp ? '-220px' : '200px',
-                        }}
-                      >
-                        <div className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all hover:scale-105 shadow-lg">
-                          <h3 className="font-display text-xl font-semibold mb-3 text-center">{item.title}</h3>
-                          <p className="text-muted-foreground text-sm text-center leading-relaxed">{item.description}</p>
-                        </div>
+                    {/* Icon */}
+                    <div className="flex justify-center mb-6">
+                      <div className="w-20 h-20 rounded-full bg-card border-4 border-primary flex items-center justify-center text-4xl glow-effect z-10 shadow-lg">
+                        {item.icon}
                       </div>
                     </div>
-                  );
-                })}
-              </div>
+
+                    {/* Content Card */}
+                    <div className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all hover:scale-105 shadow-lg">
+                      <h3 className="font-display text-xl font-semibold mb-3 text-center">{item.title}</h3>
+                      <p className="text-muted-foreground text-sm text-center leading-relaxed">{item.description}</p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
 
             {/* Vertical Timeline - Mobile/Tablet */}

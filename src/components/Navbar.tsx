@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import rockyMascot from "@/assets/rocky-mascot.jpg";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,8 +64,12 @@ const Navbar = () => {
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="flex items-center gap-3 group"
             >
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center font-display text-xl font-bold group-hover:scale-110 transition-transform glow-effect">
-                R
+              <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-primary group-hover:scale-110 transition-transform glow-effect">
+                <img 
+                  src={rockyMascot} 
+                  alt="Rocky Logo" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <span className="font-display text-xl font-bold hidden sm:block">
                 Rocky

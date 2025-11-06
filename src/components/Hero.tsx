@@ -21,11 +21,11 @@ const Hero = () => {
           {/* Content */}
           <div className="flex-1 text-center lg:text-left animate-fade-in">
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Your AI Event Copilot for Attendees and CRM for Sponsors
+              Your AI Event Copilot
               <span className="block gradient-text mt-2">Born on Base</span>
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
-              Rocky helps you manage your event like never before — chat, organize, and explore with AI.
+              Chat. Organize. Explore. Turn every event into a connected experience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" className="text-lg px-8 py-6 glow-effect hover:scale-105 transition-transform">

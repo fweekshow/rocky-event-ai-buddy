@@ -16,11 +16,11 @@ const VideoPresentation = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto">
+        <div className="space-y-12 max-w-6xl mx-auto">
           {/* Video */}
           <div className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <div className="bg-card border border-border rounded-2xl p-4 hover:border-primary/50 transition-all">
-              <div className="aspect-video rounded-lg overflow-hidden bg-muted">
+            <div className="bg-card border border-border rounded-2xl p-6 hover:border-primary/50 transition-all">
+              <div className="aspect-video rounded-lg overflow-hidden bg-muted mb-4">
                 <video
                   src="https://res.cloudinary.com/dg5qvbxjp/video/upload/v1760661156/Basecamp_vid_ndzww8.mp4"
                   className="w-full h-full object-cover"
@@ -28,7 +28,7 @@ const VideoPresentation = () => {
                   preload="metadata"
                 />
               </div>
-              <div className="mt-4 text-center">
+              <div className="text-center">
                 <h3 className="font-display text-xl font-semibold mb-2">Basecamp Video</h3>
                 <p className="text-sm text-muted-foreground">
                   Our journey and vision for Rocky
@@ -39,16 +39,16 @@ const VideoPresentation = () => {
 
           {/* Canva Embed */}
           <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <div className="bg-card border border-border rounded-2xl p-4 hover:border-primary/50 transition-all h-full flex flex-col">
-              <div className="flex-1 rounded-lg overflow-hidden bg-muted">
+            <div className="bg-card border border-border rounded-2xl p-6 hover:border-primary/50 transition-all">
+              <div className="rounded-lg overflow-hidden bg-muted mb-4" style={{ height: "600px" }}>
                 <iframe
                   loading="lazy"
-                  className="w-full h-full min-h-[400px] lg:min-h-[500px]"
+                  className="w-full h-full"
                   src="https://www.canva.com/design/DAGz8ZPplT8/usUPBi4UE_YLeqz0emIdOw/view?embed"
                   allow="fullscreen"
                 />
               </div>
-              <div className="mt-4 text-center">
+              <div className="text-center">
                 <h3 className="font-display text-xl font-semibold mb-2">Pitch Deck</h3>
                 <p className="text-sm text-muted-foreground mb-3">
                   Explore our complete presentation

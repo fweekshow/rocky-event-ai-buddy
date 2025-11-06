@@ -41,23 +41,52 @@ const TreasureHunt = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          {steps.map((step, index) => (
-            <div
-              key={index}
-              className="relative bg-card border border-border rounded-2xl p-6 hover:border-secondary/50 transition-all animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center font-display text-xl font-bold text-secondary border-2 border-secondary/50">
-                {index + 1}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-start">
+          {/* Steps List */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            {steps.map((step, index) => (
+              <div
+                key={index}
+                className="relative bg-card border border-border rounded-2xl p-6 hover:border-secondary/50 transition-all animate-fade-in"
+                style={{ animationDelay: `${0.15 + index * 0.1}s` }}
+              >
+                <div className="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center font-display text-xl font-bold text-secondary border-2 border-secondary/50">
+                  {index + 1}
+                </div>
+                <div className="mb-4 inline-flex p-3 rounded-xl bg-secondary/10">
+                  <step.icon className="w-7 h-7 text-secondary" />
+                </div>
+                <h3 className="font-display text-xl font-semibold mb-3">{step.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
               </div>
-              <div className="mb-4 inline-flex p-3 rounded-xl bg-secondary/10">
-                <step.icon className="w-7 h-7 text-secondary" />
+            ))}
+          </div>
+
+          {/* Demo Video */}
+          <div className="animate-fade-in sticky top-8" style={{ animationDelay: "0.2s" }}>
+            <div className="bg-card border border-border rounded-2xl overflow-hidden shadow-lg">
+              <div className="aspect-video bg-muted flex items-center justify-center relative group">
+                <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-primary/20"></div>
+                <div className="relative z-10 text-center p-8">
+                  <div className="text-6xl mb-4">🎬</div>
+                  <p className="text-lg font-semibold text-foreground mb-2">Treasure Hunt Demo</p>
+                  <p className="text-sm text-muted-foreground">Video placeholder - Replace with actual demo</p>
+                </div>
+                {/* Placeholder for actual video embed */}
+                {/* <iframe
+                  src="YOUR_VIDEO_URL_HERE"
+                  className="absolute inset-0 w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe> */}
               </div>
-              <h3 className="font-display text-xl font-semibold mb-3">{step.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
+              <div className="p-4 bg-card/50">
+                <p className="text-sm text-muted-foreground text-center">
+                  Experience the AI-powered treasure hunt in action
+                </p>
+              </div>
             </div>
-          ))}
+          </div>
         </div>
 
         <div className="mt-12 text-center">

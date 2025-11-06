@@ -1,8 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import DetailedFeatures from "@/components/DetailedFeatures";
+import AttendeesSection from "@/components/AttendeesSection";
 import TreasureHunt from "@/components/TreasureHunt";
+import SponsorsSection from "@/components/SponsorsSection";
 import BaseSection from "@/components/BaseSection";
 import TokenSection from "@/components/TokenSection";
 import CTASection from "@/components/CTASection";
@@ -16,12 +17,11 @@ const Index = () => {
       <section id="about">
         <About />
       </section>
-      <section id="detailed-features">
-        <DetailedFeatures />
-      </section>
+      <AttendeesSection />
       <section id="treasure-hunt">
         <TreasureHunt />
       </section>
+      <SponsorsSection />
       <section id="base">
         <BaseSection />
       </section>

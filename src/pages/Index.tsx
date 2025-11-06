@@ -6,7 +6,6 @@ import TreasureHunt from "@/components/TreasureHunt";
 import SponsorsSection from "@/components/SponsorsSection";
 import BaseSection from "@/components/BaseSection";
 import TokenSection from "@/components/TokenSection";
-import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -27,9 +26,6 @@ const Index = () => {
       </section>
       <section id="token">
         <TokenSection />
-      </section>
-      <section id="join">
-        <CTASection />
       </section>
       <Footer />
     </div>

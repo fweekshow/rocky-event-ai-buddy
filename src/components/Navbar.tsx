@@ -10,11 +10,9 @@ const Navbar = () => {
 
   const navItems = [
     { name: "About", href: "#about" },
-    { name: "Features", href: "#features" },
-    { name: "Treasure Hunt", href: "#treasure-hunt" },
+    { name: "Features", href: "#attendees" },
     { name: "Base", href: "#base" },
     { name: "Token", href: "#token" },
-    { name: "Join", href: "#join" },
   ];
 
   useEffect(() => {

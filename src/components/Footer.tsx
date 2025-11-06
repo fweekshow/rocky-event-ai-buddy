@@ -1,4 +1,4 @@
-import { Github, X, ExternalLink } from "lucide-react";
+import { Github, Twitter, ExternalLink } from "lucide-react";
 import rockyMascot from "@/assets/rocky-mascot.jpg";
 
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
     ],
     social: [
       { name: "Twitter", icon: Twitter, href: "https://x.com/rockyeventagent" },
-      { name: "GitHub", icon: X, href: "#" },
+      { name: "GitHub", icon: Twitter, href: "#" },
     ],
   };
 

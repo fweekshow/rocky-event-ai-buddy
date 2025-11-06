@@ -41,9 +41,29 @@ const TreasureHunt = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          {/* Steps List */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 animate-fade-in order-2 lg:order-1" style={{ animationDelay: "0.2s" }}>
+            {steps.map((step, index) => (
+              <div
+                key={index}
+                className="relative bg-card border border-border rounded-2xl p-6 hover:border-secondary/50 transition-all animate-fade-in"
+                style={{ animationDelay: `${0.15 + index * 0.1}s` }}
+              >
+                <div className="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center font-display text-xl font-bold text-secondary border-2 border-secondary/50">
+                  {index + 1}
+                </div>
+                <div className="mb-4 inline-flex p-3 rounded-xl bg-secondary/10">
+                  <step.icon className="w-7 h-7 text-secondary" />
+                </div>
+                <h3 className="font-display text-xl font-semibold mb-3">{step.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
+              </div>
+            ))}
+          </div>
+
           {/* Demo Video - iPhone Mockup */}
-          <div className="animate-fade-in sticky top-8" style={{ animationDelay: "0.1s" }}>
+          <div className="animate-fade-in sticky top-8 order-1 lg:order-2" style={{ animationDelay: "0.1s" }}>
             <div className="flex justify-center">
               {/* iPhone Frame */}
               <div className="relative bg-black rounded-[3rem] p-3 shadow-2xl" style={{ width: "320px" }}>
@@ -64,26 +84,6 @@ const TreasureHunt = () => {
             <p className="text-sm text-muted-foreground text-center mt-6">
               Experience the AI-powered treasure hunt in action
             </p>
-          </div>
-
-          {/* Steps List */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            {steps.map((step, index) => (
-              <div
-                key={index}
-                className="relative bg-card border border-border rounded-2xl p-6 hover:border-secondary/50 transition-all animate-fade-in"
-                style={{ animationDelay: `${0.15 + index * 0.1}s` }}
-              >
-                <div className="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center font-display text-xl font-bold text-secondary border-2 border-secondary/50">
-                  {index + 1}
-                </div>
-                <div className="mb-4 inline-flex p-3 rounded-xl bg-secondary/10">
-                  <step.icon className="w-7 h-7 text-secondary" />
-                </div>
-                <h3 className="font-display text-xl font-semibold mb-3">{step.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
-              </div>
-            ))}
           </div>
         </div>
 

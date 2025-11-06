@@ -16,7 +16,7 @@ const Hero = () => {
         style={{ animationDelay: "1s" }}
       ></div>
 
-      <div className="relative z-10 mx-auto px-6 lg:px-12 max-w-[1600px] py-20">
+      <div className="relative z-10 mx-auto px-6 lg:px-12 py-20">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           {/* Content */}
           <div className="flex-1 text-center lg:text-left animate-fade-in">
@@ -29,10 +29,10 @@ const Hero = () => {
               <p>Turning every event into a connected experience.</p>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="text-lg px-8 py-6 glow-effect hover:scale-105 transition-transform"
-                onClick={() => document.getElementById('attendees')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => document.getElementById("attendees")?.scrollIntoView({ behavior: "smooth" })}
               >
                 For Attendees
               </Button>
@@ -40,7 +40,7 @@ const Hero = () => {
                 size="lg"
                 variant="secondary"
                 className="text-lg px-8 py-6 hover:scale-105 transition-transform"
-                onClick={() => document.getElementById('sponsors')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => document.getElementById("sponsors")?.scrollIntoView({ behavior: "smooth" })}
               >
                 For Sponsors
               </Button>

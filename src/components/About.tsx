@@ -1,22 +1,24 @@
-import { ChevronRight } from "lucide-react";
-
 const About = () => {
   const timeline = [
     {
       title: "Base Hackathon",
       description: "Rocky was born during the Base Hackathon, where innovation meets blockchain technology.",
+      icon: "🚀",
     },
     {
       title: "Basecamp 001",
       description: "Successfully deployed at Base's Basecamp 001, helping organize and manage events seamlessly.",
+      icon: "⛺",
     },
     {
       title: "Top 40 Builder",
       description: "Recognized by Base Batches as one of the Top 40 Builders in the ecosystem.",
+      icon: "🏆",
     },
     {
       title: "DevConnect Argentina",
       description: "Now launching at DevConnect Argentina, bringing AI-powered event management to the world.",
+      icon: "🌎",
     },
   ];
 
@@ -45,8 +47,8 @@ const About = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {/* Icon */}
-                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center glow-effect z-10">
-                    <ChevronRight className="w-8 h-8 text-primary" />
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-card border-2 border-primary flex items-center justify-center text-3xl glow-effect z-10">
+                    {item.icon}
                   </div>
 
                   {/* Content */}

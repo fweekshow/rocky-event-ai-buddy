@@ -97,7 +97,7 @@ const Navbar = () => {
                 className="glow-effect hover:scale-105 transition-transform"
                 onClick={() => window.open("https://join.base.app/", "_blank")}
               >
-                Explore BaseApp
+                Explore Base App
               </Button>
             </div>
 

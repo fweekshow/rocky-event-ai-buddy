@@ -30,14 +30,14 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" className="text-lg px-8 py-6 glow-effect hover:scale-105 transition-transform">
-                For Sponsors
+                For Attendees
               </Button>
               <Button
                 size="lg"
-                variant="outline"
-                className="text-lg px-8 py-6 border-primary/50 hover:bg-primary/10 hover:scale-105 transition-transform"
+                variant="secondary"
+                className="text-lg px-8 py-6 hover:scale-105 transition-transform"
               >
-                For Attendees
+                For Sponsors
               </Button>
             </div>
           </div>

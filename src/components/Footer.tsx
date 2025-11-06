@@ -10,11 +10,11 @@ const Footer = () => {
     ],
     resources: [
       { name: "Base.org", href: "https://base.org", external: true },
-      { name: "Base Batches", href: "#", external: true },
+      { name: "Base Batches", href: "https://www.basebatches.xyz", external: true },
       { name: "Documentation", href: "#" },
     ],
     social: [
-      { name: "Twitter", icon: Twitter, href: "#" },
+      { name: "Twitter", icon: Twitter, href: "https://x.com/rockyeventagent" },
       { name: "GitHub", icon: Github, href: "#" },
     ],
   };
@@ -27,16 +27,13 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary">
-                <img 
-                  src={rockyMascot} 
-                  alt="Rocky Logo" 
-                  className="w-full h-full object-cover"
-                />
+                <img src={rockyMascot} alt="Rocky Logo" className="w-full h-full object-cover" />
               </div>
               <span className="font-display text-2xl font-bold">Rocky</span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-sm">
-              Your AI Event Assistant — Born on Base. Making event management effortless through AI-powered conversations.
+              Your AI Event Assistant — Born on Base. Making event management effortless through AI-powered
+              conversations.
             </p>
             <div className="flex gap-4">
               {links.social.map((social) => (
@@ -51,24 +48,21 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          
+
           {/* Product Links */}
           <div>
             <h3 className="font-display font-semibold mb-4">Product</h3>
             <ul className="space-y-3">
               {links.product.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
+                  <a href={link.href} className="text-muted-foreground hover:text-foreground transition-colors">
                     {link.name}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
-          
+
           {/* Resources Links */}
           <div>
             <h3 className="font-display font-semibold mb-4">Resources</h3>
@@ -88,7 +82,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">

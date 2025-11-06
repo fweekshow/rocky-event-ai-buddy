@@ -41,6 +41,30 @@ const TreasureHunt = () => {
           </p>
         </div>
 
+        {/* Demo Video - iPhone Mockup */}
+        <div className="animate-fade-in sticky top-8" style={{ animationDelay: "0.2s" }}>
+          <div className="flex justify-center">
+            {/* iPhone Frame */}
+            <div className="relative bg-black rounded-[3rem] p-3 shadow-2xl" style={{ width: "320px" }}>
+              {/* Notch */}
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-3xl z-10"></div>
+
+              {/* Screen */}
+              <div className="relative bg-white rounded-[2.5rem] overflow-hidden" style={{ aspectRatio: "9/19.5" }}>
+                <video src="/demo-video.mp4" className="w-full h-full object-cover" autoPlay loop muted playsInline />
+              </div>
+
+              {/* Side Button */}
+              <div className="absolute -right-1 top-24 w-1 h-12 bg-black rounded-l"></div>
+              <div className="absolute -left-1 top-20 w-1 h-8 bg-black rounded-r"></div>
+              <div className="absolute -left-1 top-32 w-1 h-12 bg-black rounded-r"></div>
+            </div>
+          </div>
+          <p className="text-sm text-muted-foreground text-center mt-6">
+            Experience the AI-powered treasure hunt in action
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-start">
           {/* Steps List */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
@@ -60,37 +84,6 @@ const TreasureHunt = () => {
                 <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
               </div>
             ))}
-          </div>
-
-          {/* Demo Video - iPhone Mockup */}
-          <div className="animate-fade-in sticky top-8" style={{ animationDelay: "0.2s" }}>
-            <div className="flex justify-center">
-              {/* iPhone Frame */}
-              <div className="relative bg-black rounded-[3rem] p-3 shadow-2xl" style={{ width: '320px' }}>
-                {/* Notch */}
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-3xl z-10"></div>
-                
-                {/* Screen */}
-                <div className="relative bg-white rounded-[2.5rem] overflow-hidden" style={{ aspectRatio: '9/19.5' }}>
-                  <video
-                    src="/demo-video.mp4"
-                    className="w-full h-full object-cover"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                  />
-                </div>
-                
-                {/* Side Button */}
-                <div className="absolute -right-1 top-24 w-1 h-12 bg-black rounded-l"></div>
-                <div className="absolute -left-1 top-20 w-1 h-8 bg-black rounded-r"></div>
-                <div className="absolute -left-1 top-32 w-1 h-12 bg-black rounded-r"></div>
-              </div>
-            </div>
-            <p className="text-sm text-muted-foreground text-center mt-6">
-              Experience the AI-powered treasure hunt in action
-            </p>
           </div>
         </div>
 

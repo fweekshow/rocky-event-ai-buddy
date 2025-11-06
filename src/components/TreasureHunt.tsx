@@ -62,30 +62,35 @@ const TreasureHunt = () => {
             ))}
           </div>
 
-          {/* Demo Video */}
+          {/* Demo Video - iPhone Mockup */}
           <div className="animate-fade-in sticky top-8" style={{ animationDelay: "0.2s" }}>
-            <div className="bg-card border border-border rounded-2xl overflow-hidden shadow-lg">
-              <div className="aspect-video bg-muted flex items-center justify-center relative group">
-                <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-primary/20"></div>
-                <div className="relative z-10 text-center p-8">
-                  <div className="text-6xl mb-4">🎬</div>
-                  <p className="text-lg font-semibold text-foreground mb-2">Treasure Hunt Demo</p>
-                  <p className="text-sm text-muted-foreground">Video placeholder - Replace with actual demo</p>
+            <div className="flex justify-center">
+              {/* iPhone Frame */}
+              <div className="relative bg-black rounded-[3rem] p-3 shadow-2xl" style={{ width: '320px' }}>
+                {/* Notch */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-3xl z-10"></div>
+                
+                {/* Screen */}
+                <div className="relative bg-white rounded-[2.5rem] overflow-hidden" style={{ aspectRatio: '9/19.5' }}>
+                  <video
+                    src="/demo-video.mp4"
+                    className="w-full h-full object-cover"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  />
                 </div>
-                {/* Placeholder for actual video embed */}
-                {/* <iframe
-                  src="YOUR_VIDEO_URL_HERE"
-                  className="absolute inset-0 w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe> */}
-              </div>
-              <div className="p-4 bg-card/50">
-                <p className="text-sm text-muted-foreground text-center">
-                  Experience the AI-powered treasure hunt in action
-                </p>
+                
+                {/* Side Button */}
+                <div className="absolute -right-1 top-24 w-1 h-12 bg-black rounded-l"></div>
+                <div className="absolute -left-1 top-20 w-1 h-8 bg-black rounded-r"></div>
+                <div className="absolute -left-1 top-32 w-1 h-12 bg-black rounded-r"></div>
               </div>
             </div>
+            <p className="text-sm text-muted-foreground text-center mt-6">
+              Experience the AI-powered treasure hunt in action
+            </p>
           </div>
         </div>
 

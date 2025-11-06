@@ -12,32 +12,37 @@ const BaseTokenSection = () => {
   };
 
   return (
-    <section id="base" className="py-20 sm:py-32 relative overflow-hidden">
+    <section id="base" className="py-16 sm:py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-primary/10 to-primary/5"></div>
       
       <div className="container relative mx-auto px-4">
-        <div className="max-w-5xl mx-auto">
-          <div className="bg-card border-2 border-primary/50 rounded-3xl p-8 sm:p-12 lg:p-16 glow-effect animate-fade-in">
-            <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 rounded-full bg-primary/20 border border-primary/50 glow-effect">
-                <div className="w-3 h-3 rounded-full bg-primary animate-pulse"></div>
-                <span className="font-display text-lg font-semibold">Built on Base</span>
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-card border-2 border-primary/50 rounded-3xl p-8 sm:p-10 glow-effect animate-fade-in">
+            <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
+              {/* Left Side - Title */}
+              <div className="lg:flex-1">
+                <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
+                  Powered by Base
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl">
+                  Rocky is built on Base — the next generation Ethereum L2 blockchain.
+                </p>
               </div>
               
-              <h2 className="font-display text-4xl sm:text-5xl font-bold mb-6">
-                Powered by Base
-              </h2>
-              
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Rocky is built on Base — the next generation Ethereum L2 blockchain. Leveraging cutting-edge technology to deliver fast, secure, and scalable event management solutions.
-              </p>
+              {/* Right Side - Badge */}
+              <div className="lg:flex-shrink-0">
+                <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-primary/20 border border-primary/50 glow-effect">
+                  <div className="w-3 h-3 rounded-full bg-primary animate-pulse"></div>
+                  <span className="font-display text-lg font-semibold">Built on Base</span>
+                </div>
+              </div>
             </div>
             
             {/* Token Info */}
-            <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <div className="mt-8 space-y-4 animate-fade-in" style={{ animationDelay: "0.1s" }}>
               {/* Contract Address */}
               <div>
-                <label className="block text-sm font-medium text-muted-foreground mb-3">
+                <label className="block text-sm font-medium text-muted-foreground mb-2">
                   Contract Address
                 </label>
                 <div className="flex flex-col sm:flex-row gap-3">
@@ -55,20 +60,20 @@ const BaseTokenSection = () => {
                 </div>
               </div>
               
-              {/* Token Info Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="bg-muted/30 rounded-xl p-6 border border-border">
-                  <div className="text-sm text-muted-foreground mb-2">Symbol</div>
-                  <div className="font-display text-2xl font-bold text-secondary">$ROCKY</div>
+              {/* Symbol and Network - Single Line */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex-1 bg-muted/30 rounded-xl p-4 border border-border flex items-center justify-between">
+                  <span className="text-sm text-muted-foreground">Symbol</span>
+                  <span className="font-display text-xl font-bold text-secondary">$ROCKY</span>
                 </div>
-                <div className="bg-muted/30 rounded-xl p-6 border border-border">
-                  <div className="text-sm text-muted-foreground mb-2">Network</div>
-                  <div className="font-display text-2xl font-bold">Base</div>
+                <div className="flex-1 bg-muted/30 rounded-xl p-4 border border-border flex items-center justify-between">
+                  <span className="text-sm text-muted-foreground">Network</span>
+                  <span className="font-display text-xl font-bold">Base</span>
                 </div>
               </div>
               
               {/* Dexscreener Link */}
-              <div className="flex justify-center pt-4">
+              <div className="flex justify-center pt-2">
                 <Button 
                   size="lg" 
                   className="gap-2 glow-effect hover:scale-105 transition-transform"

@@ -20,6 +20,12 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
 
+      // Clear active section when at the top (hero section)
+      if (window.scrollY < 300) {
+        setActiveSection("");
+        return;
+      }
+
       // Update active section based on scroll position
       const sections = navItems.map((item) => item.href.slice(1));
       const currentSection = sections.find((section) => {

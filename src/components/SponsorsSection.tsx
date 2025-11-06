@@ -24,11 +24,8 @@ const SponsorsSection = () => {
   ];
 
   return (
-    <section id="sponsors" className="py-20 sm:py-32 relative overflow-hidden">
-      {/* Pixelated Dots */}
-      <div className="absolute inset-0 pixelated-dots pixelated-dots-sparse pointer-events-none opacity-40"></div>
-      
-      <div className="container mx-auto px-6 sm:px-8 lg:px-6 relative z-10">
+    <section id="sponsors" className="py-20 sm:py-32 relative">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-secondary">
             For Sponsors

@@ -16,8 +16,10 @@ const Hero = () => {
         style={{ animationDelay: "1s" }}
       ></div>
       
-      {/* Pixelated Dots */}
+      {/* Pixelated Dots - Multiple Layers */}
       <div className="absolute inset-0 pixelated-dots pointer-events-none"></div>
+      <div className="absolute inset-0 pixelated-dots-layer2 pointer-events-none"></div>
+      <div className="absolute inset-0 pixelated-dots-layer3 pointer-events-none"></div>
 
       <div className="container relative z-10 mx-auto px-6 sm:px-8 lg:px-6 py-20">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">

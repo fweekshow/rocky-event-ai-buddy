@@ -172,41 +172,98 @@
       400px 480px 0 hsl(var(--secondary)), 404px 480px 0 hsl(var(--secondary)), 400px 484px 0 hsl(var(--secondary)), 404px 484px 0 hsl(var(--secondary));
   }
   
-  .pixelated-dots-sparse::before {
+  /* Additional layers for Hero section only */
+  .pixelated-dots-layer2 {
+    position: relative;
+  }
+  
+  .pixelated-dots-layer2::before {
     content: '';
     position: absolute;
     width: 3px;
     height: 3px;
     border-radius: 1px;
-    opacity: 0.6;
-    animation: float 9s ease-in-out infinite;
+    opacity: 0.7;
+    animation: float 11s ease-in-out infinite;
+    animation-delay: 3s;
     box-shadow: 
-      /* Medium Blue Rock */
-      180px 120px 0 hsl(var(--primary)), 184px 120px 0 hsl(var(--primary)), 188px 120px 0 hsl(var(--primary)), 192px 120px 0 hsl(var(--primary)),
-      176px 124px 0 hsl(var(--primary)), 180px 124px 0 hsl(var(--primary)), 184px 124px 0 hsl(var(--primary)), 188px 124px 0 hsl(var(--primary)), 192px 124px 0 hsl(var(--primary)), 196px 124px 0 hsl(var(--primary)),
-      176px 128px 0 hsl(var(--primary)), 180px 128px 0 hsl(var(--primary)), 184px 128px 0 hsl(var(--primary)), 188px 128px 0 hsl(var(--primary)), 192px 128px 0 hsl(var(--primary)), 196px 128px 0 hsl(var(--primary)),
-      180px 132px 0 hsl(var(--primary)), 184px 132px 0 hsl(var(--primary)), 188px 132px 0 hsl(var(--primary)), 192px 132px 0 hsl(var(--primary)),
+      /* Behind mascot area - right side lower clusters */
+      720px 380px 0 hsl(var(--primary)), 724px 380px 0 hsl(var(--primary)), 728px 380px 0 hsl(var(--primary)), 732px 380px 0 hsl(var(--primary)), 736px 380px 0 hsl(var(--primary)), 740px 380px 0 hsl(var(--primary)),
+      716px 384px 0 hsl(var(--primary)), 720px 384px 0 hsl(var(--primary)), 724px 384px 0 hsl(var(--primary)), 728px 384px 0 hsl(var(--primary)), 732px 384px 0 hsl(var(--primary)), 736px 384px 0 hsl(var(--primary)), 740px 384px 0 hsl(var(--primary)), 744px 384px 0 hsl(var(--primary)),
+      716px 388px 0 hsl(var(--primary)), 720px 388px 0 hsl(var(--primary)), 724px 388px 0 hsl(var(--primary)), 728px 388px 0 hsl(var(--primary)), 732px 388px 0 hsl(var(--primary)), 736px 388px 0 hsl(var(--primary)), 740px 388px 0 hsl(var(--primary)), 744px 388px 0 hsl(var(--primary)),
+      720px 392px 0 hsl(var(--primary)), 724px 392px 0 hsl(var(--primary)), 728px 392px 0 hsl(var(--primary)), 732px 392px 0 hsl(var(--primary)), 736px 392px 0 hsl(var(--primary)), 740px 392px 0 hsl(var(--primary)),
+      724px 396px 0 hsl(var(--primary)), 728px 396px 0 hsl(var(--primary)), 732px 396px 0 hsl(var(--primary)), 736px 396px 0 hsl(var(--primary)),
       
-      /* Medium Yellow Rock */
-      500px 180px 0 hsl(var(--secondary)), 504px 180px 0 hsl(var(--secondary)), 508px 180px 0 hsl(var(--secondary)), 512px 180px 0 hsl(var(--secondary)),
-      496px 184px 0 hsl(var(--secondary)), 500px 184px 0 hsl(var(--secondary)), 504px 184px 0 hsl(var(--secondary)), 508px 184px 0 hsl(var(--secondary)), 512px 184px 0 hsl(var(--secondary)), 516px 184px 0 hsl(var(--secondary)),
-      496px 188px 0 hsl(var(--secondary)), 500px 188px 0 hsl(var(--secondary)), 504px 188px 0 hsl(var(--secondary)), 508px 188px 0 hsl(var(--secondary)), 512px 188px 0 hsl(var(--secondary)), 516px 188px 0 hsl(var(--secondary)),
-      500px 192px 0 hsl(var(--secondary)), 504px 192px 0 hsl(var(--secondary)), 508px 192px 0 hsl(var(--secondary)), 512px 192px 0 hsl(var(--secondary)),
+      /* Yellow cluster behind mascot */
+      820px 420px 0 hsl(var(--secondary)), 824px 420px 0 hsl(var(--secondary)), 828px 420px 0 hsl(var(--secondary)), 832px 420px 0 hsl(var(--secondary)), 836px 420px 0 hsl(var(--secondary)),
+      816px 424px 0 hsl(var(--secondary)), 820px 424px 0 hsl(var(--secondary)), 824px 424px 0 hsl(var(--secondary)), 828px 424px 0 hsl(var(--secondary)), 832px 424px 0 hsl(var(--secondary)), 836px 424px 0 hsl(var(--secondary)), 840px 424px 0 hsl(var(--secondary)),
+      816px 428px 0 hsl(var(--secondary)), 820px 428px 0 hsl(var(--secondary)), 824px 428px 0 hsl(var(--secondary)), 828px 428px 0 hsl(var(--secondary)), 832px 428px 0 hsl(var(--secondary)), 836px 428px 0 hsl(var(--secondary)), 840px 428px 0 hsl(var(--secondary)),
+      820px 432px 0 hsl(var(--secondary)), 824px 432px 0 hsl(var(--secondary)), 828px 432px 0 hsl(var(--secondary)), 832px 432px 0 hsl(var(--secondary)), 836px 432px 0 hsl(var(--secondary)),
+      824px 436px 0 hsl(var(--secondary)), 828px 436px 0 hsl(var(--secondary)), 832px 436px 0 hsl(var(--secondary)),
       
-      /* Medium Orange Rock */
-      800px 200px 0 hsl(var(--color-orange)), 804px 200px 0 hsl(var(--color-orange)), 808px 200px 0 hsl(var(--color-orange)),
-      796px 204px 0 hsl(var(--color-orange)), 800px 204px 0 hsl(var(--color-orange)), 804px 204px 0 hsl(var(--color-orange)), 808px 204px 0 hsl(var(--color-orange)), 812px 204px 0 hsl(var(--color-orange)),
-      796px 208px 0 hsl(var(--color-orange)), 800px 208px 0 hsl(var(--color-orange)), 804px 208px 0 hsl(var(--color-orange)), 808px 208px 0 hsl(var(--color-orange)), 812px 208px 0 hsl(var(--color-orange)),
-      800px 212px 0 hsl(var(--color-orange)), 804px 212px 0 hsl(var(--color-orange)), 808px 212px 0 hsl(var(--color-orange)),
+      /* Green cluster lower right */
+      900px 480px 0 hsl(var(--color-green)), 904px 480px 0 hsl(var(--color-green)), 908px 480px 0 hsl(var(--color-green)), 912px 480px 0 hsl(var(--color-green)), 916px 480px 0 hsl(var(--color-green)), 920px 480px 0 hsl(var(--color-green)),
+      896px 484px 0 hsl(var(--color-green)), 900px 484px 0 hsl(var(--color-green)), 904px 484px 0 hsl(var(--color-green)), 908px 484px 0 hsl(var(--color-green)), 912px 484px 0 hsl(var(--color-green)), 916px 484px 0 hsl(var(--color-green)), 920px 484px 0 hsl(var(--color-green)), 924px 484px 0 hsl(var(--color-green)),
+      896px 488px 0 hsl(var(--color-green)), 900px 488px 0 hsl(var(--color-green)), 904px 488px 0 hsl(var(--color-green)), 908px 488px 0 hsl(var(--color-green)), 912px 488px 0 hsl(var(--color-green)), 916px 488px 0 hsl(var(--color-green)), 920px 488px 0 hsl(var(--color-green)), 924px 488px 0 hsl(var(--color-green)),
+      900px 492px 0 hsl(var(--color-green)), 904px 492px 0 hsl(var(--color-green)), 908px 492px 0 hsl(var(--color-green)), 912px 492px 0 hsl(var(--color-green)), 916px 492px 0 hsl(var(--color-green)), 920px 492px 0 hsl(var(--color-green)),
+      904px 496px 0 hsl(var(--color-green)), 908px 496px 0 hsl(var(--color-green)), 912px 496px 0 hsl(var(--color-green)), 916px 496px 0 hsl(var(--color-green)),
       
-      /* Medium Green Rock */
-      350px 260px 0 hsl(var(--color-green)), 354px 260px 0 hsl(var(--color-green)), 358px 260px 0 hsl(var(--color-green)),
-      346px 264px 0 hsl(var(--color-green)), 350px 264px 0 hsl(var(--color-green)), 354px 264px 0 hsl(var(--color-green)), 358px 264px 0 hsl(var(--color-green)), 362px 264px 0 hsl(var(--color-green)),
-      346px 268px 0 hsl(var(--color-green)), 350px 268px 0 hsl(var(--color-green)), 354px 268px 0 hsl(var(--color-green)), 358px 268px 0 hsl(var(--color-green)), 362px 268px 0 hsl(var(--color-green)),
-      350px 272px 0 hsl(var(--color-green)), 354px 272px 0 hsl(var(--color-green)), 358px 272px 0 hsl(var(--color-green)),
+      /* Orange cluster center right */
+      650px 280px 0 hsl(var(--color-orange)), 654px 280px 0 hsl(var(--color-orange)), 658px 280px 0 hsl(var(--color-orange)), 662px 280px 0 hsl(var(--color-orange)), 666px 280px 0 hsl(var(--color-orange)),
+      646px 284px 0 hsl(var(--color-orange)), 650px 284px 0 hsl(var(--color-orange)), 654px 284px 0 hsl(var(--color-orange)), 658px 284px 0 hsl(var(--color-orange)), 662px 284px 0 hsl(var(--color-orange)), 666px 284px 0 hsl(var(--color-orange)), 670px 284px 0 hsl(var(--color-orange)),
+      646px 288px 0 hsl(var(--color-orange)), 650px 288px 0 hsl(var(--color-orange)), 654px 288px 0 hsl(var(--color-orange)), 658px 288px 0 hsl(var(--color-orange)), 662px 288px 0 hsl(var(--color-orange)), 666px 288px 0 hsl(var(--color-orange)), 670px 288px 0 hsl(var(--color-orange)),
+      650px 292px 0 hsl(var(--color-orange)), 654px 292px 0 hsl(var(--color-orange)), 658px 292px 0 hsl(var(--color-orange)), 662px 292px 0 hsl(var(--color-orange)), 666px 292px 0 hsl(var(--color-orange)),
+      654px 296px 0 hsl(var(--color-orange)), 658px 296px 0 hsl(var(--color-orange)), 662px 296px 0 hsl(var(--color-orange)),
       
-      /* Small rocks */
-      650px 100px 0 hsl(var(--primary)), 654px 100px 0 hsl(var(--primary)), 650px 104px 0 hsl(var(--primary)), 654px 104px 0 hsl(var(--primary)),
-      280px 340px 0 hsl(var(--secondary)), 284px 340px 0 hsl(var(--secondary)), 280px 344px 0 hsl(var(--secondary)), 284px 344px 0 hsl(var(--secondary));
+      /* More scattered clusters */
+      320px 160px 0 hsl(var(--primary)), 324px 160px 0 hsl(var(--primary)), 328px 160px 0 hsl(var(--primary)), 332px 160px 0 hsl(var(--primary)),
+      316px 164px 0 hsl(var(--primary)), 320px 164px 0 hsl(var(--primary)), 324px 164px 0 hsl(var(--primary)), 328px 164px 0 hsl(var(--primary)), 332px 164px 0 hsl(var(--primary)), 336px 164px 0 hsl(var(--primary)),
+      316px 168px 0 hsl(var(--primary)), 320px 168px 0 hsl(var(--primary)), 324px 168px 0 hsl(var(--primary)), 328px 168px 0 hsl(var(--primary)), 332px 168px 0 hsl(var(--primary)), 336px 168px 0 hsl(var(--primary)),
+      320px 172px 0 hsl(var(--primary)), 324px 172px 0 hsl(var(--primary)), 328px 172px 0 hsl(var(--primary)), 332px 172px 0 hsl(var(--primary));
+  }
+  
+  .pixelated-dots-layer3 {
+    position: relative;
+  }
+  
+  .pixelated-dots-layer3::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 1px;
+    opacity: 0.7;
+    animation: float 13s ease-in-out infinite;
+    animation-delay: 5s;
+    box-shadow: 
+      /* Dense cluster top center */
+      420px 50px 0 hsl(var(--secondary)), 424px 50px 0 hsl(var(--secondary)), 428px 50px 0 hsl(var(--secondary)), 432px 50px 0 hsl(var(--secondary)), 436px 50px 0 hsl(var(--secondary)), 440px 50px 0 hsl(var(--secondary)), 444px 50px 0 hsl(var(--secondary)),
+      416px 54px 0 hsl(var(--secondary)), 420px 54px 0 hsl(var(--secondary)), 424px 54px 0 hsl(var(--secondary)), 428px 54px 0 hsl(var(--secondary)), 432px 54px 0 hsl(var(--secondary)), 436px 54px 0 hsl(var(--secondary)), 440px 54px 0 hsl(var(--secondary)), 444px 54px 0 hsl(var(--secondary)), 448px 54px 0 hsl(var(--secondary)),
+      416px 58px 0 hsl(var(--secondary)), 420px 58px 0 hsl(var(--secondary)), 424px 58px 0 hsl(var(--secondary)), 428px 58px 0 hsl(var(--secondary)), 432px 58px 0 hsl(var(--secondary)), 436px 58px 0 hsl(var(--secondary)), 440px 58px 0 hsl(var(--secondary)), 444px 58px 0 hsl(var(--secondary)), 448px 58px 0 hsl(var(--secondary)), 452px 58px 0 hsl(var(--secondary)),
+      420px 62px 0 hsl(var(--secondary)), 424px 62px 0 hsl(var(--secondary)), 428px 62px 0 hsl(var(--secondary)), 432px 62px 0 hsl(var(--secondary)), 436px 62px 0 hsl(var(--secondary)), 440px 62px 0 hsl(var(--secondary)), 444px 62px 0 hsl(var(--secondary)), 448px 62px 0 hsl(var(--secondary)),
+      424px 66px 0 hsl(var(--secondary)), 428px 66px 0 hsl(var(--secondary)), 432px 66px 0 hsl(var(--secondary)), 436px 66px 0 hsl(var(--secondary)), 440px 66px 0 hsl(var(--secondary)), 444px 66px 0 hsl(var(--secondary)),
+      428px 70px 0 hsl(var(--secondary)), 432px 70px 0 hsl(var(--secondary)), 436px 70px 0 hsl(var(--secondary)), 440px 70px 0 hsl(var(--secondary)),
+      
+      /* Dense green cluster left bottom */
+      200px 500px 0 hsl(var(--color-green)), 204px 500px 0 hsl(var(--color-green)), 208px 500px 0 hsl(var(--color-green)), 212px 500px 0 hsl(var(--color-green)), 216px 500px 0 hsl(var(--color-green)), 220px 500px 0 hsl(var(--color-green)),
+      196px 504px 0 hsl(var(--color-green)), 200px 504px 0 hsl(var(--color-green)), 204px 504px 0 hsl(var(--color-green)), 208px 504px 0 hsl(var(--color-green)), 212px 504px 0 hsl(var(--color-green)), 216px 504px 0 hsl(var(--color-green)), 220px 504px 0 hsl(var(--color-green)), 224px 504px 0 hsl(var(--color-green)),
+      196px 508px 0 hsl(var(--color-green)), 200px 508px 0 hsl(var(--color-green)), 204px 508px 0 hsl(var(--color-green)), 208px 508px 0 hsl(var(--color-green)), 212px 508px 0 hsl(var(--color-green)), 216px 508px 0 hsl(var(--color-green)), 220px 508px 0 hsl(var(--color-green)), 224px 508px 0 hsl(var(--color-green)), 228px 508px 0 hsl(var(--color-green)),
+      200px 512px 0 hsl(var(--color-green)), 204px 512px 0 hsl(var(--color-green)), 208px 512px 0 hsl(var(--color-green)), 212px 512px 0 hsl(var(--color-green)), 216px 512px 0 hsl(var(--color-green)), 220px 512px 0 hsl(var(--color-green)), 224px 512px 0 hsl(var(--color-green)),
+      204px 516px 0 hsl(var(--color-green)), 208px 516px 0 hsl(var(--color-green)), 212px 516px 0 hsl(var(--color-green)), 216px 516px 0 hsl(var(--color-green)), 220px 516px 0 hsl(var(--color-green)),
+      208px 520px 0 hsl(var(--color-green)), 212px 520px 0 hsl(var(--color-green)), 216px 520px 0 hsl(var(--color-green)),
+      
+      /* Orange cluster mid left */
+      360px 340px 0 hsl(var(--color-orange)), 364px 340px 0 hsl(var(--color-orange)), 368px 340px 0 hsl(var(--color-orange)), 372px 340px 0 hsl(var(--color-orange)), 376px 340px 0 hsl(var(--color-orange)),
+      356px 344px 0 hsl(var(--color-orange)), 360px 344px 0 hsl(var(--color-orange)), 364px 344px 0 hsl(var(--color-orange)), 368px 344px 0 hsl(var(--color-orange)), 372px 344px 0 hsl(var(--color-orange)), 376px 344px 0 hsl(var(--color-orange)), 380px 344px 0 hsl(var(--color-orange)),
+      356px 348px 0 hsl(var(--color-orange)), 360px 348px 0 hsl(var(--color-orange)), 364px 348px 0 hsl(var(--color-orange)), 368px 348px 0 hsl(var(--color-orange)), 372px 348px 0 hsl(var(--color-orange)), 376px 348px 0 hsl(var(--color-orange)), 380px 348px 0 hsl(var(--color-orange)),
+      360px 352px 0 hsl(var(--color-orange)), 364px 352px 0 hsl(var(--color-orange)), 368px 352px 0 hsl(var(--color-orange)), 372px 352px 0 hsl(var(--color-orange)), 376px 352px 0 hsl(var(--color-orange)),
+      364px 356px 0 hsl(var(--color-orange)), 368px 356px 0 hsl(var(--color-orange)), 372px 356px 0 hsl(var(--color-orange)),
+      
+      /* Blue cluster upper right */
+      780px 140px 0 hsl(var(--primary)), 784px 140px 0 hsl(var(--primary)), 788px 140px 0 hsl(var(--primary)), 792px 140px 0 hsl(var(--primary)), 796px 140px 0 hsl(var(--primary)),
+      776px 144px 0 hsl(var(--primary)), 780px 144px 0 hsl(var(--primary)), 784px 144px 0 hsl(var(--primary)), 788px 144px 0 hsl(var(--primary)), 792px 144px 0 hsl(var(--primary)), 796px 144px 0 hsl(var(--primary)), 800px 144px 0 hsl(var(--primary)),
+      776px 148px 0 hsl(var(--primary)), 780px 148px 0 hsl(var(--primary)), 784px 148px 0 hsl(var(--primary)), 788px 148px 0 hsl(var(--primary)), 792px 148px 0 hsl(var(--primary)), 796px 148px 0 hsl(var(--primary)), 800px 148px 0 hsl(var(--primary)),
+      780px 152px 0 hsl(var(--primary)), 784px 152px 0 hsl(var(--primary)), 788px 152px 0 hsl(var(--primary)), 792px 152px 0 hsl(var(--primary)), 796px 152px 0 hsl(var(--primary)),
+      784px 156px 0 hsl(var(--primary)), 788px 156px 0 hsl(var(--primary)), 792px 156px 0 hsl(var(--primary));
   }
 }

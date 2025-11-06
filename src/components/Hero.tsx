@@ -25,7 +25,8 @@ const Hero = () => {
               <span className="block gradient-text mt-2">Born on Base</span>
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
-              Chat. Organize. Explore - Turn every event into a connected experience.
+              Chat. Organize. Explore
+              <p>Turning every event into a connected experience.</p>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" className="text-lg px-8 py-6 glow-effect hover:scale-105 transition-transform">

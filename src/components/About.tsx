@@ -86,7 +86,7 @@ const About = () => {
                         </div>
                       </>
                     ) : (
-                      <div className={`relative left-[32px] ${index === 2 ? "bottom-[-64px]" : ""}`}>
+                      <div className={`relative  ${index === 2 ? "left-[32px] bottom-[-64px]" : ""}`}>
                         {/* Content Card First */}
                         <div className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all hover:scale-105 shadow-lg mb-6">
                           <h3 className="font-display text-xl font-semibold mb-3 text-center">{item.title}</h3>

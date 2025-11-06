@@ -64,7 +64,7 @@ const DetailedFeatures = () => {
 
   return (
     <section className="py-20 sm:py-32 relative">
-      <div className="container mx-auto px-4">
+      <div className="mx-auto px-6 lg:px-12 max-w-[1600px]">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Features of Rocky</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -72,7 +72,7 @@ const DetailedFeatures = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* For Attendees */}
           <div className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <div className="mb-8">

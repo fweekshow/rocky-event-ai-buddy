@@ -45,7 +45,7 @@ const AttendeesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-start">
           {/* Features List */}
           <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             {attendeeFeatures.map((feature, index) => (

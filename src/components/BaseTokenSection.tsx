@@ -16,7 +16,7 @@ const BaseTokenSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-primary/10 to-primary/5"></div>
       
       <div className="container relative mx-auto px-6 sm:px-8 lg:px-6">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="bg-card border-2 border-primary/50 rounded-3xl p-8 sm:p-10 glow-effect animate-fade-in">
             <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
               {/* Left Side - Title */}

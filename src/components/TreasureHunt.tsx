@@ -41,7 +41,7 @@ const TreasureHunt = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-start">
           {/* Demo Video - iPhone Mockup */}
           <div className="animate-fade-in sticky top-8" style={{ animationDelay: "0.1s" }}>
             <div className="flex justify-center">

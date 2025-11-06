@@ -16,7 +16,7 @@ const VideoPresentation = () => {
           </p>
         </div>
 
-        <div className="space-y-12 max-w-6xl mx-auto">
+        <div className="space-y-12 max-w-5xl mx-auto">
           {/* Video */}
           <div className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <div className="bg-card border border-border rounded-2xl p-6 hover:border-primary/50 transition-all">

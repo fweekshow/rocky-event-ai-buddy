@@ -34,7 +34,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8">
           <div className="relative">
             {/* Winding Road Path - Desktop */}
             <div className="hidden lg:block absolute left-0 right-0 top-1/2 -translate-y-1/2 h-1">

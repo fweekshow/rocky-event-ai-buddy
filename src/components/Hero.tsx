@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import rockyMascot from "@/assets/rocky-mascot.jpg";
 
 const Hero = () => {
@@ -32,17 +33,17 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="text-lg px-8 py-6 glow-effect hover:scale-105 transition-transform"
-                onClick={() => document.getElementById('detailed-features')?.scrollIntoView({ behavior: 'smooth' })}
+                asChild
               >
-                For Attendees
+                <Link to="/attendees">For Attendees</Link>
               </Button>
               <Button
                 size="lg"
                 variant="secondary"
                 className="text-lg px-8 py-6 hover:scale-105 transition-transform"
-                onClick={() => document.getElementById('detailed-features')?.scrollIntoView({ behavior: 'smooth' })}
+                asChild
               >
-                For Sponsors
+                <Link to="/sponsors">For Sponsors</Link>
               </Button>
             </div>
           </div>

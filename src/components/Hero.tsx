@@ -14,11 +14,11 @@ const Hero = () => {
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-[120px] animate-float" style={{ animationDelay: '1s' }} />
     
       {/* Main content */}
-      <div className="relative z-10 max-w-[1600px] mx-auto px-6 lg:px-12 py-20">
+      <div className="relative z-10 mx-auto px-6 lg:px-12 max-w-[1600px] py-20">
         <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
           
           {/* Text content */}
-          <div className="flex-1 animate-fade-in">
+          <div className="flex-1 animate-fade-in min-w-0">
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Your AI Event Copilot
               <span className="block gradient-text mt-2">Born on Base</span>

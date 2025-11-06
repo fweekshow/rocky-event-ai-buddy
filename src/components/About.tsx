@@ -86,7 +86,7 @@ const About = () => {
                         </div>
                       </>
                     ) : (
-                      <>
+                      <div className="mb-[-2]">
                         {/* Content Card First */}
                         <div className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all hover:scale-105 shadow-lg mb-6">
                           <h3 className="font-display text-xl font-semibold mb-3 text-center">{item.title}</h3>

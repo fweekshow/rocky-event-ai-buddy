@@ -20,8 +20,8 @@ const Navbar = () => {
       setIsScrolled(window.scrollY > 50);
 
       // Update active section based on scroll position
-      const sections = navItems.map(item => item.href.slice(1));
-      const currentSection = sections.find(section => {
+      const sections = navItems.map((item) => item.href.slice(1));
+      const currentSection = sections.find((section) => {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
@@ -29,7 +29,7 @@ const Navbar = () => {
         }
         return false;
       });
-      
+
       if (currentSection) {
         setActiveSection(currentSection);
       }
@@ -52,9 +52,7 @@ const Navbar = () => {
       <nav
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-          isScrolled
-            ? "bg-background/80 backdrop-blur-lg border-b border-border shadow-lg"
-            : "bg-transparent"
+          isScrolled ? "bg-background/80 backdrop-blur-lg border-b border-border shadow-lg" : "bg-transparent",
         )}
       >
         <div className="container mx-auto px-4">
@@ -65,15 +63,9 @@ const Navbar = () => {
               className="flex items-center gap-3 group"
             >
               <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-primary group-hover:scale-110 transition-transform glow-effect">
-                <img 
-                  src={rockyMascot} 
-                  alt="Rocky Logo" 
-                  className="w-full h-full object-cover"
-                />
+                <img src={rockyMascot} alt="Rocky Logo" className="w-full h-full object-cover" />
               </div>
-              <span className="font-display text-xl font-bold hidden sm:block">
-                Rocky
-              </span>
+              <span className="font-display text-xl font-bold hidden sm:block">Rocky</span>
             </button>
 
             {/* Desktop Navigation */}
@@ -86,7 +78,7 @@ const Navbar = () => {
                     "text-sm font-medium transition-colors relative py-2",
                     activeSection === item.href.slice(1)
                       ? "text-foreground"
-                      : "text-muted-foreground hover:text-foreground"
+                      : "text-muted-foreground hover:text-foreground",
                   )}
                 >
                   {item.name}
@@ -100,17 +92,11 @@ const Navbar = () => {
             {/* CTA Buttons */}
             <div className="hidden lg:flex items-center gap-3">
               <Button
-                variant="ghost"
-                size="sm"
-                className="hover:text-primary transition-colors"
-              >
-                Meet Rocky
-              </Button>
-              <Button
                 size="sm"
                 className="glow-effect hover:scale-105 transition-transform"
+                onClick={() => window.open("https://join.base.app/", "_blank")}
               >
-                Explore on Base
+                Explore BaseApp
               </Button>
             </div>
 
@@ -119,11 +105,7 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="lg:hidden p-2 hover:bg-muted rounded-lg transition-colors"
             >
-              {isMobileMenuOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <Menu className="w-6 h-6" />
-              )}
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </div>
@@ -133,9 +115,7 @@ const Navbar = () => {
       <div
         className={cn(
           "fixed inset-0 z-40 lg:hidden transition-all duration-300",
-          isMobileMenuOpen
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
+          isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none",
         )}
       >
         {/* Backdrop */}
@@ -155,7 +135,7 @@ const Navbar = () => {
                   "w-full text-left px-4 py-3 rounded-lg font-medium transition-all",
                   activeSection === item.href.slice(1)
                     ? "bg-primary/20 text-primary"
-                    : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                    : "text-muted-foreground hover:bg-muted hover:text-foreground",
                 )}
               >
                 {item.name}
@@ -164,15 +144,10 @@ const Navbar = () => {
           </div>
 
           <div className="space-y-3 pt-4 border-t border-border">
-            <Button
-              variant="outline"
-              className="w-full border-primary/50 hover:bg-primary/10"
-            >
+            <Button variant="outline" className="w-full border-primary/50 hover:bg-primary/10">
               Meet Rocky
             </Button>
-            <Button className="w-full glow-effect">
-              Explore on Base
-            </Button>
+            <Button className="w-full glow-effect">Explore on Base</Button>
           </div>
         </div>
       </div>

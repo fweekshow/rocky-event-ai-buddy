@@ -10,7 +10,7 @@ const Footer = () => {
     ],
     social: [
       { name: "Twitter", icon: Twitter, href: "https://x.com/rockyeventagent" },
-      { name: "GitHub", icon: Twitter, href: "#" },
+      { name: "GitHub", icon: Github, href: "#" },
     ],
   };
 

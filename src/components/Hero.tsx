@@ -1,5 +1,10 @@
 import { Button } from "@/components/ui/button";
 import rockyMascot from "@/assets/rocky-mascot.jpg";
+import rockDotBlue from "@/assets/rock-dot-blue.png";
+import rockDotYellow from "@/assets/rock-dot-yellow.png";
+import rockDotOrange from "@/assets/rock-dot-orange.png";
+import rockDotGreen from "@/assets/rock-dot-green.png";
+import rockDotPurple from "@/assets/rock-dot-purple.png";
 
 const Hero = () => {
   return (
@@ -15,6 +20,44 @@ const Hero = () => {
         className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-[120px] animate-float"
         style={{ animationDelay: "1s" }}
       ></div>
+
+      {/* Decorative Rock Dots */}
+      <img 
+        src={rockDotBlue} 
+        alt="" 
+        className="absolute top-32 left-[15%] w-12 h-12 opacity-60 animate-float hidden lg:block"
+        style={{ animationDelay: "0.5s" }}
+      />
+      <img 
+        src={rockDotYellow} 
+        alt="" 
+        className="absolute top-[20%] right-[12%] w-16 h-16 opacity-50 animate-float hidden lg:block"
+        style={{ animationDelay: "1.2s" }}
+      />
+      <img 
+        src={rockDotOrange} 
+        alt="" 
+        className="absolute bottom-[30%] left-[8%] w-14 h-14 opacity-55 animate-float hidden lg:block"
+        style={{ animationDelay: "0.8s" }}
+      />
+      <img 
+        src={rockDotGreen} 
+        alt="" 
+        className="absolute bottom-[15%] right-[20%] w-12 h-12 opacity-60 animate-float hidden lg:block"
+        style={{ animationDelay: "1.5s" }}
+      />
+      <img 
+        src={rockDotPurple} 
+        alt="" 
+        className="absolute top-[60%] left-[20%] w-10 h-10 opacity-50 animate-float hidden lg:block"
+        style={{ animationDelay: "2s" }}
+      />
+      <img 
+        src={rockDotBlue} 
+        alt="" 
+        className="absolute top-[45%] right-[8%] w-10 h-10 opacity-45 animate-float hidden lg:block"
+        style={{ animationDelay: "1.8s" }}
+      />
 
       <div className="container relative z-10 mx-auto px-6 sm:px-8 lg:px-6 py-20">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">

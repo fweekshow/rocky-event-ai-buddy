@@ -1,3 +1,8 @@
+import rockDotBlue from "@/assets/rock-dot-blue.png";
+import rockDotYellow from "@/assets/rock-dot-yellow.png";
+import rockDotPurple from "@/assets/rock-dot-purple.png";
+import rockDotOrange from "@/assets/rock-dot-orange.png";
+
 const SponsorsSection = () => {
   const sponsorFeatures = [
     {
@@ -24,7 +29,33 @@ const SponsorsSection = () => {
   ];
 
   return (
-    <section id="sponsors" className="py-20 sm:py-32 relative">
+    <section id="sponsors" className="py-20 sm:py-32 relative overflow-hidden">
+      {/* Decorative Rock Dots */}
+      <img 
+        src={rockDotYellow} 
+        alt="" 
+        className="absolute top-[15%] left-[7%] w-14 h-14 opacity-40 animate-float hidden lg:block"
+        style={{ animationDelay: "0.5s" }}
+      />
+      <img 
+        src={rockDotOrange} 
+        alt="" 
+        className="absolute top-[30%] right-[10%] w-12 h-12 opacity-35 animate-float hidden lg:block"
+        style={{ animationDelay: "1.2s" }}
+      />
+      <img 
+        src={rockDotPurple} 
+        alt="" 
+        className="absolute bottom-[25%] left-[12%] w-10 h-10 opacity-40 animate-float hidden lg:block"
+        style={{ animationDelay: "0.8s" }}
+      />
+      <img 
+        src={rockDotBlue} 
+        alt="" 
+        className="absolute bottom-[12%] right-[8%] w-11 h-11 opacity-35 animate-float hidden lg:block"
+        style={{ animationDelay: "1.6s" }}
+      />
+      
       <div className="container mx-auto px-6 sm:px-8 lg:px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-secondary">

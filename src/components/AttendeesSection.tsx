@@ -1,3 +1,8 @@
+import rockDotBlue from "@/assets/rock-dot-blue.png";
+import rockDotYellow from "@/assets/rock-dot-yellow.png";
+import rockDotOrange from "@/assets/rock-dot-orange.png";
+import rockDotGreen from "@/assets/rock-dot-green.png";
+
 const AttendeesSection = () => {
   const attendeeFeatures = [
     {
@@ -34,7 +39,33 @@ const AttendeesSection = () => {
   ];
 
   return (
-    <section id="attendees" className="py-20 sm:py-32 relative">
+    <section id="attendees" className="py-20 sm:py-32 relative overflow-hidden">
+      {/* Decorative Rock Dots */}
+      <img 
+        src={rockDotBlue} 
+        alt="" 
+        className="absolute top-[10%] left-[5%] w-10 h-10 opacity-40 animate-float hidden lg:block"
+        style={{ animationDelay: "0.3s" }}
+      />
+      <img 
+        src={rockDotYellow} 
+        alt="" 
+        className="absolute top-[25%] right-[8%] w-12 h-12 opacity-35 animate-float hidden lg:block"
+        style={{ animationDelay: "1s" }}
+      />
+      <img 
+        src={rockDotOrange} 
+        alt="" 
+        className="absolute bottom-[20%] left-[10%] w-11 h-11 opacity-40 animate-float hidden lg:block"
+        style={{ animationDelay: "1.5s" }}
+      />
+      <img 
+        src={rockDotGreen} 
+        alt="" 
+        className="absolute bottom-[10%] right-[15%] w-10 h-10 opacity-35 animate-float hidden lg:block"
+        style={{ animationDelay: "0.7s" }}
+      />
+      
       <div className="container mx-auto px-6 sm:px-8 lg:px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-primary">

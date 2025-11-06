@@ -1,4 +1,8 @@
 import { Trophy, Camera, CheckCircle, Gift } from "lucide-react";
+import rockDotGreen from "@/assets/rock-dot-green.png";
+import rockDotYellow from "@/assets/rock-dot-yellow.png";
+import rockDotPurple from "@/assets/rock-dot-purple.png";
+import rockDotOrange from "@/assets/rock-dot-orange.png";
 
 const TreasureHunt = () => {
   const steps = [
@@ -27,6 +31,32 @@ const TreasureHunt = () => {
   return (
     <section className="py-20 sm:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-primary/10"></div>
+
+      {/* Decorative Rock Dots */}
+      <img 
+        src={rockDotGreen} 
+        alt="" 
+        className="absolute top-[12%] left-[6%] w-12 h-12 opacity-40 animate-float hidden lg:block"
+        style={{ animationDelay: "0.4s" }}
+      />
+      <img 
+        src={rockDotYellow} 
+        alt="" 
+        className="absolute top-[28%] right-[9%] w-14 h-14 opacity-35 animate-float hidden lg:block"
+        style={{ animationDelay: "1.1s" }}
+      />
+      <img 
+        src={rockDotPurple} 
+        alt="" 
+        className="absolute bottom-[18%] left-[8%] w-10 h-10 opacity-40 animate-float hidden lg:block"
+        style={{ animationDelay: "1.4s" }}
+      />
+      <img 
+        src={rockDotOrange} 
+        alt="" 
+        className="absolute bottom-[35%] right-[12%] w-11 h-11 opacity-35 animate-float hidden lg:block"
+        style={{ animationDelay: "0.6s" }}
+      />
 
       <div className="container relative mx-auto px-6 sm:px-8 lg:px-6">
         <div className="text-center mb-16 animate-fade-in">

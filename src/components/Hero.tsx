@@ -14,7 +14,8 @@ const Hero = () => {
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-[120px] animate-float" style={{ animationDelay: '1s' }} />
     
       {/* Main content */}
-      <div className="relative z-10 mx-auto px-6 lg:px-12 max-w-[1600px] py-20">
+      <div>
+        <div className="relative z-10 mx-auto px-6 lg:px-12 max-w-[1600px] py-20">
         <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
           
           {/* Text content */}
@@ -44,8 +45,8 @@ const Hero = () => {
               <img src={rockyMascot} alt="Rocky - AI Event Assistant Mascot" className="relative w-64 sm:w-80 lg:w-96 h-auto rounded-full animate-float" />
             </div>
           </div>
-    
         </div>
+      <div/>
       </div>
     </section>
 

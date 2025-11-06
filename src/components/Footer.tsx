@@ -17,9 +17,10 @@ const Footer = () => {
   return (
     <footer className="relative border-t border-border bg-background">
       <div className="container mx-auto px-4 py-12 sm:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        {/* Top Section: Brand on left, Resources on right */}
+        <div className="flex flex-col md:flex-row justify-between mb-12 gap-12">
           {/* Brand */}
-          <div className="md:col-span-2">
+          <div className="md:flex-1">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary">
                 <img src={rockyMascot} alt="Rocky Logo" className="w-full h-full object-cover" />
@@ -45,9 +46,9 @@ const Footer = () => {
           </div>
 
           {/* Resources Links */}
-          <div>
+          <div className="md:flex-1 md:text-right">
             <h3 className="font-display font-semibold mb-4">Resources</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 inline-block text-left md:text-right">
               {links.resources.map((link) => (
                 <li key={link.name}>
                   <a

@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Features from "@/components/Features";
+import DetailedFeatures from "@/components/DetailedFeatures";
 import TreasureHunt from "@/components/TreasureHunt";
 import BaseSection from "@/components/BaseSection";
 import TokenSection from "@/components/TokenSection";
@@ -18,6 +19,9 @@ const Index = () => {
       </section>
       <section id="features">
         <Features />
+      </section>
+      <section id="detailed-features">
+        <DetailedFeatures />
       </section>
       <section id="treasure-hunt">
         <TreasureHunt />

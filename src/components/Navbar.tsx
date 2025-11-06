@@ -12,8 +12,8 @@ const Navbar = () => {
   const navItems = [
     { name: "About", href: "#about" },
     { name: "Features", href: "#attendees" },
-    { name: "Presentation", href: "#presentation" },
     { name: "Base", href: "#base" },
+    { name: "Presentation", href: "#presentation" },
   ];
 
   useEffect(() => {

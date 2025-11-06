@@ -79,152 +79,134 @@
     position: relative;
   }
   
-  .pixelated-dots::before {
+  .pixelated-dots::before,
+  .pixelated-dots::after {
     content: '';
     position: absolute;
-    width: 4px;
-    height: 4px;
+    width: 3px;
+    height: 3px;
     border-radius: 1px;
-    opacity: 0.7;
-    animation: float 6s ease-in-out infinite;
+    opacity: 0.8;
+  }
+  
+  .pixelated-dots::before {
+    animation: float 8s ease-in-out infinite;
     box-shadow: 
-      /* Blue Rock Cluster 1 */
-      100px 80px 0 hsl(var(--primary)),
-      104px 80px 0 hsl(var(--primary)),
-      108px 80px 0 hsl(var(--primary)),
-      100px 84px 0 hsl(var(--primary)),
-      104px 84px 0 hsl(var(--primary)),
-      108px 84px 0 hsl(var(--primary)),
-      104px 88px 0 hsl(var(--primary)),
+      /* Large Blue Rock Cluster - Top Left */
+      80px 60px 0 hsl(var(--primary)), 84px 60px 0 hsl(var(--primary)), 88px 60px 0 hsl(var(--primary)), 92px 60px 0 hsl(var(--primary)), 96px 60px 0 hsl(var(--primary)), 100px 60px 0 hsl(var(--primary)), 104px 60px 0 hsl(var(--primary)),
+      80px 64px 0 hsl(var(--primary)), 84px 64px 0 hsl(var(--primary)), 88px 64px 0 hsl(var(--primary)), 92px 64px 0 hsl(var(--primary)), 96px 64px 0 hsl(var(--primary)), 100px 64px 0 hsl(var(--primary)), 104px 64px 0 hsl(var(--primary)), 108px 64px 0 hsl(var(--primary)),
+      76px 68px 0 hsl(var(--primary)), 80px 68px 0 hsl(var(--primary)), 84px 68px 0 hsl(var(--primary)), 88px 68px 0 hsl(var(--primary)), 92px 68px 0 hsl(var(--primary)), 96px 68px 0 hsl(var(--primary)), 100px 68px 0 hsl(var(--primary)), 104px 68px 0 hsl(var(--primary)), 108px 68px 0 hsl(var(--primary)), 112px 68px 0 hsl(var(--primary)),
+      76px 72px 0 hsl(var(--primary)), 80px 72px 0 hsl(var(--primary)), 84px 72px 0 hsl(var(--primary)), 88px 72px 0 hsl(var(--primary)), 92px 72px 0 hsl(var(--primary)), 96px 72px 0 hsl(var(--primary)), 100px 72px 0 hsl(var(--primary)), 104px 72px 0 hsl(var(--primary)), 108px 72px 0 hsl(var(--primary)), 112px 72px 0 hsl(var(--primary)),
+      80px 76px 0 hsl(var(--primary)), 84px 76px 0 hsl(var(--primary)), 88px 76px 0 hsl(var(--primary)), 92px 76px 0 hsl(var(--primary)), 96px 76px 0 hsl(var(--primary)), 100px 76px 0 hsl(var(--primary)), 104px 76px 0 hsl(var(--primary)), 108px 76px 0 hsl(var(--primary)),
+      84px 80px 0 hsl(var(--primary)), 88px 80px 0 hsl(var(--primary)), 92px 80px 0 hsl(var(--primary)), 96px 80px 0 hsl(var(--primary)), 100px 80px 0 hsl(var(--primary)), 104px 80px 0 hsl(var(--primary)),
       
-      /* Yellow Rock Cluster 1 */
-      300px 150px 0 hsl(var(--secondary)),
-      304px 150px 0 hsl(var(--secondary)),
-      308px 150px 0 hsl(var(--secondary)),
-      312px 150px 0 hsl(var(--secondary)),
-      300px 154px 0 hsl(var(--secondary)),
-      304px 154px 0 hsl(var(--secondary)),
-      308px 154px 0 hsl(var(--secondary)),
-      304px 158px 0 hsl(var(--secondary)),
-      308px 158px 0 hsl(var(--secondary)),
+      /* Large Yellow Rock Cluster - Top Right */
+      900px 80px 0 hsl(var(--secondary)), 904px 80px 0 hsl(var(--secondary)), 908px 80px 0 hsl(var(--secondary)), 912px 80px 0 hsl(var(--secondary)), 916px 80px 0 hsl(var(--secondary)), 920px 80px 0 hsl(var(--secondary)),
+      896px 84px 0 hsl(var(--secondary)), 900px 84px 0 hsl(var(--secondary)), 904px 84px 0 hsl(var(--secondary)), 908px 84px 0 hsl(var(--secondary)), 912px 84px 0 hsl(var(--secondary)), 916px 84px 0 hsl(var(--secondary)), 920px 84px 0 hsl(var(--secondary)), 924px 84px 0 hsl(var(--secondary)),
+      896px 88px 0 hsl(var(--secondary)), 900px 88px 0 hsl(var(--secondary)), 904px 88px 0 hsl(var(--secondary)), 908px 88px 0 hsl(var(--secondary)), 912px 88px 0 hsl(var(--secondary)), 916px 88px 0 hsl(var(--secondary)), 920px 88px 0 hsl(var(--secondary)), 924px 88px 0 hsl(var(--secondary)), 928px 88px 0 hsl(var(--secondary)),
+      900px 92px 0 hsl(var(--secondary)), 904px 92px 0 hsl(var(--secondary)), 908px 92px 0 hsl(var(--secondary)), 912px 92px 0 hsl(var(--secondary)), 916px 92px 0 hsl(var(--secondary)), 920px 92px 0 hsl(var(--secondary)), 924px 92px 0 hsl(var(--secondary)),
+      904px 96px 0 hsl(var(--secondary)), 908px 96px 0 hsl(var(--secondary)), 912px 96px 0 hsl(var(--secondary)), 916px 96px 0 hsl(var(--secondary)), 920px 96px 0 hsl(var(--secondary)),
       
-      /* Orange Rock Cluster 1 */
-      550px 100px 0 hsl(var(--color-orange)),
-      554px 100px 0 hsl(var(--color-orange)),
-      558px 100px 0 hsl(var(--color-orange)),
-      550px 104px 0 hsl(var(--color-orange)),
-      554px 104px 0 hsl(var(--color-orange)),
-      558px 104px 0 hsl(var(--color-orange)),
-      562px 104px 0 hsl(var(--color-orange)),
-      554px 108px 0 hsl(var(--color-orange)),
+      /* Large Orange Rock Cluster - Center */
+      480px 280px 0 hsl(var(--color-orange)), 484px 280px 0 hsl(var(--color-orange)), 488px 280px 0 hsl(var(--color-orange)), 492px 280px 0 hsl(var(--color-orange)), 496px 280px 0 hsl(var(--color-orange)), 500px 280px 0 hsl(var(--color-orange)), 504px 280px 0 hsl(var(--color-orange)), 508px 280px 0 hsl(var(--color-orange)),
+      476px 284px 0 hsl(var(--color-orange)), 480px 284px 0 hsl(var(--color-orange)), 484px 284px 0 hsl(var(--color-orange)), 488px 284px 0 hsl(var(--color-orange)), 492px 284px 0 hsl(var(--color-orange)), 496px 284px 0 hsl(var(--color-orange)), 500px 284px 0 hsl(var(--color-orange)), 504px 284px 0 hsl(var(--color-orange)), 508px 284px 0 hsl(var(--color-orange)), 512px 284px 0 hsl(var(--color-orange)),
+      476px 288px 0 hsl(var(--color-orange)), 480px 288px 0 hsl(var(--color-orange)), 484px 288px 0 hsl(var(--color-orange)), 488px 288px 0 hsl(var(--color-orange)), 492px 288px 0 hsl(var(--color-orange)), 496px 288px 0 hsl(var(--color-orange)), 500px 288px 0 hsl(var(--color-orange)), 504px 288px 0 hsl(var(--color-orange)), 508px 288px 0 hsl(var(--color-orange)), 512px 288px 0 hsl(var(--color-orange)), 516px 288px 0 hsl(var(--color-orange)),
+      480px 292px 0 hsl(var(--color-orange)), 484px 292px 0 hsl(var(--color-orange)), 488px 292px 0 hsl(var(--color-orange)), 492px 292px 0 hsl(var(--color-orange)), 496px 292px 0 hsl(var(--color-orange)), 500px 292px 0 hsl(var(--color-orange)), 504px 292px 0 hsl(var(--color-orange)), 508px 292px 0 hsl(var(--color-orange)), 512px 292px 0 hsl(var(--color-orange)),
+      484px 296px 0 hsl(var(--color-orange)), 488px 296px 0 hsl(var(--color-orange)), 492px 296px 0 hsl(var(--color-orange)), 496px 296px 0 hsl(var(--color-orange)), 500px 296px 0 hsl(var(--color-orange)), 504px 296px 0 hsl(var(--color-orange)), 508px 296px 0 hsl(var(--color-orange)),
+      488px 300px 0 hsl(var(--color-orange)), 492px 300px 0 hsl(var(--color-orange)), 496px 300px 0 hsl(var(--color-orange)), 500px 300px 0 hsl(var(--color-orange)), 504px 300px 0 hsl(var(--color-orange)),
       
-      /* Green Rock Cluster 1 */
-      750px 200px 0 hsl(var(--color-green)),
-      754px 200px 0 hsl(var(--color-green)),
-      758px 200px 0 hsl(var(--color-green)),
-      750px 204px 0 hsl(var(--color-green)),
-      754px 204px 0 hsl(var(--color-green)),
-      758px 204px 0 hsl(var(--color-green)),
-      754px 208px 0 hsl(var(--color-green)),
+      /* Large Green Rock Cluster - Bottom Left */
+      150px 420px 0 hsl(var(--color-green)), 154px 420px 0 hsl(var(--color-green)), 158px 420px 0 hsl(var(--color-green)), 162px 420px 0 hsl(var(--color-green)), 166px 420px 0 hsl(var(--color-green)), 170px 420px 0 hsl(var(--color-green)),
+      146px 424px 0 hsl(var(--color-green)), 150px 424px 0 hsl(var(--color-green)), 154px 424px 0 hsl(var(--color-green)), 158px 424px 0 hsl(var(--color-green)), 162px 424px 0 hsl(var(--color-green)), 166px 424px 0 hsl(var(--color-green)), 170px 424px 0 hsl(var(--color-green)), 174px 424px 0 hsl(var(--color-green)),
+      146px 428px 0 hsl(var(--color-green)), 150px 428px 0 hsl(var(--color-green)), 154px 428px 0 hsl(var(--color-green)), 158px 428px 0 hsl(var(--color-green)), 162px 428px 0 hsl(var(--color-green)), 166px 428px 0 hsl(var(--color-green)), 170px 428px 0 hsl(var(--color-green)), 174px 428px 0 hsl(var(--color-green)), 178px 428px 0 hsl(var(--color-green)),
+      150px 432px 0 hsl(var(--color-green)), 154px 432px 0 hsl(var(--color-green)), 158px 432px 0 hsl(var(--color-green)), 162px 432px 0 hsl(var(--color-green)), 166px 432px 0 hsl(var(--color-green)), 170px 432px 0 hsl(var(--color-green)), 174px 432px 0 hsl(var(--color-green)),
+      154px 436px 0 hsl(var(--color-green)), 158px 436px 0 hsl(var(--color-green)), 162px 436px 0 hsl(var(--color-green)), 166px 436px 0 hsl(var(--color-green)), 170px 436px 0 hsl(var(--color-green)),
       
-      /* Blue Rock Cluster 2 */
-      200px 300px 0 hsl(var(--primary)),
-      204px 300px 0 hsl(var(--primary)),
-      208px 300px 0 hsl(var(--primary)),
-      200px 304px 0 hsl(var(--primary)),
-      204px 304px 0 hsl(var(--primary)),
-      208px 304px 0 hsl(var(--primary)),
+      /* Medium Blue Rock - Right Side */
+      850px 340px 0 hsl(var(--primary)), 854px 340px 0 hsl(var(--primary)), 858px 340px 0 hsl(var(--primary)), 862px 340px 0 hsl(var(--primary)),
+      846px 344px 0 hsl(var(--primary)), 850px 344px 0 hsl(var(--primary)), 854px 344px 0 hsl(var(--primary)), 858px 344px 0 hsl(var(--primary)), 862px 344px 0 hsl(var(--primary)), 866px 344px 0 hsl(var(--primary)),
+      846px 348px 0 hsl(var(--primary)), 850px 348px 0 hsl(var(--primary)), 854px 348px 0 hsl(var(--primary)), 858px 348px 0 hsl(var(--primary)), 862px 348px 0 hsl(var(--primary)), 866px 348px 0 hsl(var(--primary)),
+      850px 352px 0 hsl(var(--primary)), 854px 352px 0 hsl(var(--primary)), 858px 352px 0 hsl(var(--primary)), 862px 352px 0 hsl(var(--primary)),
       
-      /* Yellow Rock Cluster 2 */
-      450px 250px 0 hsl(var(--secondary)),
-      454px 250px 0 hsl(var(--secondary)),
-      458px 250px 0 hsl(var(--secondary)),
-      450px 254px 0 hsl(var(--secondary)),
-      454px 254px 0 hsl(var(--secondary)),
-      458px 254px 0 hsl(var(--secondary)),
-      462px 254px 0 hsl(var(--secondary)),
+      /* Medium Yellow Rock - Left Center */
+      280px 220px 0 hsl(var(--secondary)), 284px 220px 0 hsl(var(--secondary)), 288px 220px 0 hsl(var(--secondary)), 292px 220px 0 hsl(var(--secondary)),
+      276px 224px 0 hsl(var(--secondary)), 280px 224px 0 hsl(var(--secondary)), 284px 224px 0 hsl(var(--secondary)), 288px 224px 0 hsl(var(--secondary)), 292px 224px 0 hsl(var(--secondary)), 296px 224px 0 hsl(var(--secondary)),
+      276px 228px 0 hsl(var(--secondary)), 280px 228px 0 hsl(var(--secondary)), 284px 228px 0 hsl(var(--secondary)), 288px 228px 0 hsl(var(--secondary)), 292px 228px 0 hsl(var(--secondary)), 296px 228px 0 hsl(var(--secondary)),
+      280px 232px 0 hsl(var(--secondary)), 284px 232px 0 hsl(var(--secondary)), 288px 232px 0 hsl(var(--secondary)), 292px 232px 0 hsl(var(--secondary));
+  }
+  
+  .pixelated-dots::after {
+    animation: float 10s ease-in-out infinite;
+    animation-delay: 2s;
+    box-shadow: 
+      /* Large Orange Rock - Bottom Right */
+      750px 450px 0 hsl(var(--color-orange)), 754px 450px 0 hsl(var(--color-orange)), 758px 450px 0 hsl(var(--color-orange)), 762px 450px 0 hsl(var(--color-orange)), 766px 450px 0 hsl(var(--color-orange)), 770px 450px 0 hsl(var(--color-orange)),
+      746px 454px 0 hsl(var(--color-orange)), 750px 454px 0 hsl(var(--color-orange)), 754px 454px 0 hsl(var(--color-orange)), 758px 454px 0 hsl(var(--color-orange)), 762px 454px 0 hsl(var(--color-orange)), 766px 454px 0 hsl(var(--color-orange)), 770px 454px 0 hsl(var(--color-orange)), 774px 454px 0 hsl(var(--color-orange)),
+      746px 458px 0 hsl(var(--color-orange)), 750px 458px 0 hsl(var(--color-orange)), 754px 458px 0 hsl(var(--color-orange)), 758px 458px 0 hsl(var(--color-orange)), 762px 458px 0 hsl(var(--color-orange)), 766px 458px 0 hsl(var(--color-orange)), 770px 458px 0 hsl(var(--color-orange)), 774px 458px 0 hsl(var(--color-orange)),
+      750px 462px 0 hsl(var(--color-orange)), 754px 462px 0 hsl(var(--color-orange)), 758px 462px 0 hsl(var(--color-orange)), 762px 462px 0 hsl(var(--color-orange)), 766px 462px 0 hsl(var(--color-orange)), 770px 462px 0 hsl(var(--color-orange)),
+      754px 466px 0 hsl(var(--color-orange)), 758px 466px 0 hsl(var(--color-orange)), 762px 466px 0 hsl(var(--color-orange)), 766px 466px 0 hsl(var(--color-orange)),
       
-      /* Orange Rock Cluster 2 */
-      650px 350px 0 hsl(var(--color-orange)),
-      654px 350px 0 hsl(var(--color-orange)),
-      658px 350px 0 hsl(var(--color-orange)),
-      650px 354px 0 hsl(var(--color-orange)),
-      654px 354px 0 hsl(var(--color-orange)),
-      658px 354px 0 hsl(var(--color-orange)),
+      /* Large Green Rock - Top Center */
+      520px 100px 0 hsl(var(--color-green)), 524px 100px 0 hsl(var(--color-green)), 528px 100px 0 hsl(var(--color-green)), 532px 100px 0 hsl(var(--color-green)), 536px 100px 0 hsl(var(--color-green)),
+      516px 104px 0 hsl(var(--color-green)), 520px 104px 0 hsl(var(--color-green)), 524px 104px 0 hsl(var(--color-green)), 528px 104px 0 hsl(var(--color-green)), 532px 104px 0 hsl(var(--color-green)), 536px 104px 0 hsl(var(--color-green)), 540px 104px 0 hsl(var(--color-green)),
+      516px 108px 0 hsl(var(--color-green)), 520px 108px 0 hsl(var(--color-green)), 524px 108px 0 hsl(var(--color-green)), 528px 108px 0 hsl(var(--color-green)), 532px 108px 0 hsl(var(--color-green)), 536px 108px 0 hsl(var(--color-green)), 540px 108px 0 hsl(var(--color-green)),
+      520px 112px 0 hsl(var(--color-green)), 524px 112px 0 hsl(var(--color-green)), 528px 112px 0 hsl(var(--color-green)), 532px 112px 0 hsl(var(--color-green)), 536px 112px 0 hsl(var(--color-green)),
+      524px 116px 0 hsl(var(--color-green)), 528px 116px 0 hsl(var(--color-green)), 532px 116px 0 hsl(var(--color-green)),
       
-      /* Green Rock Cluster 2 */
-      850px 180px 0 hsl(var(--color-green)),
-      854px 180px 0 hsl(var(--color-green)),
-      858px 180px 0 hsl(var(--color-green)),
-      850px 184px 0 hsl(var(--color-green)),
-      854px 184px 0 hsl(var(--color-green)),
-      858px 184px 0 hsl(var(--color-green)),
-      862px 184px 0 hsl(var(--color-green)),
+      /* Large Blue Rock - Lower Center */
+      600px 350px 0 hsl(var(--primary)), 604px 350px 0 hsl(var(--primary)), 608px 350px 0 hsl(var(--primary)), 612px 350px 0 hsl(var(--primary)), 616px 350px 0 hsl(var(--primary)),
+      596px 354px 0 hsl(var(--primary)), 600px 354px 0 hsl(var(--primary)), 604px 354px 0 hsl(var(--primary)), 608px 354px 0 hsl(var(--primary)), 612px 354px 0 hsl(var(--primary)), 616px 354px 0 hsl(var(--primary)), 620px 354px 0 hsl(var(--primary)),
+      596px 358px 0 hsl(var(--primary)), 600px 358px 0 hsl(var(--primary)), 604px 358px 0 hsl(var(--primary)), 608px 358px 0 hsl(var(--primary)), 612px 358px 0 hsl(var(--primary)), 616px 358px 0 hsl(var(--primary)), 620px 358px 0 hsl(var(--primary)),
+      600px 362px 0 hsl(var(--primary)), 604px 362px 0 hsl(var(--primary)), 608px 362px 0 hsl(var(--primary)), 612px 362px 0 hsl(var(--primary)), 616px 362px 0 hsl(var(--primary)),
+      604px 366px 0 hsl(var(--primary)), 608px 366px 0 hsl(var(--primary)), 612px 366px 0 hsl(var(--primary)),
       
-      /* Small Blue Rock */
-      400px 50px 0 hsl(var(--primary)),
-      404px 50px 0 hsl(var(--primary)),
-      400px 54px 0 hsl(var(--primary)),
-      404px 54px 0 hsl(var(--primary)),
+      /* Medium Yellow Rock - Upper Right */
+      700px 180px 0 hsl(var(--secondary)), 704px 180px 0 hsl(var(--secondary)), 708px 180px 0 hsl(var(--secondary)), 712px 180px 0 hsl(var(--secondary)),
+      696px 184px 0 hsl(var(--secondary)), 700px 184px 0 hsl(var(--secondary)), 704px 184px 0 hsl(var(--secondary)), 708px 184px 0 hsl(var(--secondary)), 712px 184px 0 hsl(var(--secondary)), 716px 184px 0 hsl(var(--secondary)),
+      696px 188px 0 hsl(var(--secondary)), 700px 188px 0 hsl(var(--secondary)), 704px 188px 0 hsl(var(--secondary)), 708px 188px 0 hsl(var(--secondary)), 712px 188px 0 hsl(var(--secondary)), 716px 188px 0 hsl(var(--secondary)),
+      700px 192px 0 hsl(var(--secondary)), 704px 192px 0 hsl(var(--secondary)), 708px 192px 0 hsl(var(--secondary)), 712px 192px 0 hsl(var(--secondary)),
       
-      /* Small Yellow Rock */
-      600px 400px 0 hsl(var(--secondary)),
-      604px 400px 0 hsl(var(--secondary)),
-      600px 404px 0 hsl(var(--secondary)),
-      604px 404px 0 hsl(var(--secondary)),
-      
-      /* Small Orange Rock */
-      150px 180px 0 hsl(var(--color-orange)),
-      154px 180px 0 hsl(var(--color-orange)),
-      150px 184px 0 hsl(var(--color-orange)),
-      154px 184px 0 hsl(var(--color-orange)),
-      
-      /* Small Green Rock */
-      950px 120px 0 hsl(var(--color-green)),
-      954px 120px 0 hsl(var(--color-green)),
-      950px 124px 0 hsl(var(--color-green)),
-      954px 124px 0 hsl(var(--color-green));
+      /* Small scattered rocks */
+      350px 140px 0 hsl(var(--primary)), 354px 140px 0 hsl(var(--primary)), 350px 144px 0 hsl(var(--primary)), 354px 144px 0 hsl(var(--primary)),
+      950px 260px 0 hsl(var(--color-green)), 954px 260px 0 hsl(var(--color-green)), 950px 264px 0 hsl(var(--color-green)), 954px 264px 0 hsl(var(--color-green)),
+      400px 480px 0 hsl(var(--secondary)), 404px 480px 0 hsl(var(--secondary)), 400px 484px 0 hsl(var(--secondary)), 404px 484px 0 hsl(var(--secondary));
   }
   
   .pixelated-dots-sparse::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 1px;
+    opacity: 0.6;
+    animation: float 9s ease-in-out infinite;
     box-shadow: 
-      /* Blue Rock Cluster */
-      150px 100px 0 hsl(var(--primary)),
-      154px 100px 0 hsl(var(--primary)),
-      158px 100px 0 hsl(var(--primary)),
-      150px 104px 0 hsl(var(--primary)),
-      154px 104px 0 hsl(var(--primary)),
-      158px 104px 0 hsl(var(--primary)),
+      /* Medium Blue Rock */
+      180px 120px 0 hsl(var(--primary)), 184px 120px 0 hsl(var(--primary)), 188px 120px 0 hsl(var(--primary)), 192px 120px 0 hsl(var(--primary)),
+      176px 124px 0 hsl(var(--primary)), 180px 124px 0 hsl(var(--primary)), 184px 124px 0 hsl(var(--primary)), 188px 124px 0 hsl(var(--primary)), 192px 124px 0 hsl(var(--primary)), 196px 124px 0 hsl(var(--primary)),
+      176px 128px 0 hsl(var(--primary)), 180px 128px 0 hsl(var(--primary)), 184px 128px 0 hsl(var(--primary)), 188px 128px 0 hsl(var(--primary)), 192px 128px 0 hsl(var(--primary)), 196px 128px 0 hsl(var(--primary)),
+      180px 132px 0 hsl(var(--primary)), 184px 132px 0 hsl(var(--primary)), 188px 132px 0 hsl(var(--primary)), 192px 132px 0 hsl(var(--primary)),
       
-      /* Yellow Rock Cluster */
-      450px 150px 0 hsl(var(--secondary)),
-      454px 150px 0 hsl(var(--secondary)),
-      458px 150px 0 hsl(var(--secondary)),
-      450px 154px 0 hsl(var(--secondary)),
-      454px 154px 0 hsl(var(--secondary)),
-      458px 154px 0 hsl(var(--secondary)),
-      462px 154px 0 hsl(var(--secondary)),
+      /* Medium Yellow Rock */
+      500px 180px 0 hsl(var(--secondary)), 504px 180px 0 hsl(var(--secondary)), 508px 180px 0 hsl(var(--secondary)), 512px 180px 0 hsl(var(--secondary)),
+      496px 184px 0 hsl(var(--secondary)), 500px 184px 0 hsl(var(--secondary)), 504px 184px 0 hsl(var(--secondary)), 508px 184px 0 hsl(var(--secondary)), 512px 184px 0 hsl(var(--secondary)), 516px 184px 0 hsl(var(--secondary)),
+      496px 188px 0 hsl(var(--secondary)), 500px 188px 0 hsl(var(--secondary)), 504px 188px 0 hsl(var(--secondary)), 508px 188px 0 hsl(var(--secondary)), 512px 188px 0 hsl(var(--secondary)), 516px 188px 0 hsl(var(--secondary)),
+      500px 192px 0 hsl(var(--secondary)), 504px 192px 0 hsl(var(--secondary)), 508px 192px 0 hsl(var(--secondary)), 512px 192px 0 hsl(var(--secondary)),
       
-      /* Orange Rock Cluster */
-      750px 200px 0 hsl(var(--color-orange)),
-      754px 200px 0 hsl(var(--color-orange)),
-      758px 200px 0 hsl(var(--color-orange)),
-      750px 204px 0 hsl(var(--color-orange)),
-      754px 204px 0 hsl(var(--color-orange)),
-      758px 204px 0 hsl(var(--color-orange)),
+      /* Medium Orange Rock */
+      800px 200px 0 hsl(var(--color-orange)), 804px 200px 0 hsl(var(--color-orange)), 808px 200px 0 hsl(var(--color-orange)),
+      796px 204px 0 hsl(var(--color-orange)), 800px 204px 0 hsl(var(--color-orange)), 804px 204px 0 hsl(var(--color-orange)), 808px 204px 0 hsl(var(--color-orange)), 812px 204px 0 hsl(var(--color-orange)),
+      796px 208px 0 hsl(var(--color-orange)), 800px 208px 0 hsl(var(--color-orange)), 804px 208px 0 hsl(var(--color-orange)), 808px 208px 0 hsl(var(--color-orange)), 812px 208px 0 hsl(var(--color-orange)),
+      800px 212px 0 hsl(var(--color-orange)), 804px 212px 0 hsl(var(--color-orange)), 808px 212px 0 hsl(var(--color-orange)),
       
-      /* Green Rock Cluster */
-      250px 250px 0 hsl(var(--color-green)),
-      254px 250px 0 hsl(var(--color-green)),
-      258px 250px 0 hsl(var(--color-green)),
-      250px 254px 0 hsl(var(--color-green)),
-      254px 254px 0 hsl(var(--color-green)),
-      258px 254px 0 hsl(var(--color-green)),
+      /* Medium Green Rock */
+      350px 260px 0 hsl(var(--color-green)), 354px 260px 0 hsl(var(--color-green)), 358px 260px 0 hsl(var(--color-green)),
+      346px 264px 0 hsl(var(--color-green)), 350px 264px 0 hsl(var(--color-green)), 354px 264px 0 hsl(var(--color-green)), 358px 264px 0 hsl(var(--color-green)), 362px 264px 0 hsl(var(--color-green)),
+      346px 268px 0 hsl(var(--color-green)), 350px 268px 0 hsl(var(--color-green)), 354px 268px 0 hsl(var(--color-green)), 358px 268px 0 hsl(var(--color-green)), 362px 268px 0 hsl(var(--color-green)),
+      350px 272px 0 hsl(var(--color-green)), 354px 272px 0 hsl(var(--color-green)), 358px 272px 0 hsl(var(--color-green)),
       
-      /* Small Orange Rock */
-      600px 80px 0 hsl(var(--color-orange)),
-      604px 80px 0 hsl(var(--color-orange)),
-      600px 84px 0 hsl(var(--color-orange)),
-      604px 84px 0 hsl(var(--color-orange));
+      /* Small rocks */
+      650px 100px 0 hsl(var(--primary)), 654px 100px 0 hsl(var(--primary)), 650px 104px 0 hsl(var(--primary)), 654px 104px 0 hsl(var(--primary)),
+      280px 340px 0 hsl(var(--secondary)), 284px 340px 0 hsl(var(--secondary)), 280px 344px 0 hsl(var(--secondary)), 284px 344px 0 hsl(var(--secondary));
   }
 }

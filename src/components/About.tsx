@@ -68,7 +68,7 @@ const About = () => {
                       marginTop: isUp ? "0" : "16rem",
                     }}
                   >
-                    {isUp ? (
+                    {!isUp ? (
                       <>
                         {/* Icon */}
                         <div className="flex justify-center mb-6">

@@ -16,7 +16,7 @@ const Hero = () => {
         style={{ animationDelay: "1s" }}
       ></div>
 
-      <div className="relative z-10 mx-auto px-6 lg:px-12 py-20 max-w-[1600px]">
+      <div className="relative z-10 max-w-[1600px] mx-auto px-6 lg:px-12 py-20">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           {/* Content */}
           <div className="flex-1 text-center lg:text-left animate-fade-in">

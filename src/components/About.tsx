@@ -101,7 +101,7 @@ const About = () => {
                             {item.icon}
                           </div>
                         </div>
-                      <div/>
+                      </div>
                     )}
                   </div>
                 );

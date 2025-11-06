@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Features from "@/components/Features";
@@ -10,13 +11,26 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Navbar />
       <Hero />
-      <About />
-      <Features />
-      <TreasureHunt />
-      <BaseSection />
-      <TokenSection />
-      <CTASection />
+      <section id="about">
+        <About />
+      </section>
+      <section id="features">
+        <Features />
+      </section>
+      <section id="treasure-hunt">
+        <TreasureHunt />
+      </section>
+      <section id="base">
+        <BaseSection />
+      </section>
+      <section id="token">
+        <TokenSection />
+      </section>
+      <section id="join">
+        <CTASection />
+      </section>
       <Footer />
     </div>
   );

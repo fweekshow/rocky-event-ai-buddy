@@ -34,32 +34,85 @@ const About = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary to-transparent hidden sm:block"></div>
+            {/* Winding Road Path - Desktop */}
+            <div className="hidden lg:block absolute left-0 right-0 top-1/2 -translate-y-1/2 h-1">
+              <svg className="w-full h-64" viewBox="0 0 1200 256" preserveAspectRatio="none" style={{ position: 'absolute', top: '-128px' }}>
+                <path
+                  d="M 0,128 Q 300,50 400,128 T 800,128 Q 1000,180 1200,128"
+                  stroke="hsl(var(--primary))"
+                  strokeWidth="3"
+                  fill="none"
+                  strokeDasharray="10,5"
+                  opacity="0.5"
+                />
+              </svg>
+            </div>
 
-            <div className="space-y-12">
-              {timeline.map((item, index) => (
-                <div
-                  key={index}
-                  className="relative flex gap-6 sm:gap-8 animate-fade-in"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  {/* Icon */}
-                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-card border-2 border-primary flex items-center justify-center text-3xl glow-effect z-10">
-                    {item.icon}
-                  </div>
+            {/* Horizontal Timeline - Desktop */}
+            <div className="hidden lg:grid lg:grid-cols-4 gap-8 relative">
+              {timeline.map((item, index) => {
+                const isUp = index % 2 === 0;
+                return (
+                  <div
+                    key={index}
+                    className="relative animate-fade-in"
+                    style={{ 
+                      animationDelay: `${index * 0.15}s`,
+                      marginTop: isUp ? '0' : '16rem',
+                    }}
+                  >
+                    {/* Connecting Line */}
+                    <div 
+                      className="absolute left-1/2 -translate-x-1/2 w-0.5 bg-primary/50"
+                      style={{
+                        height: '8rem',
+                        top: isUp ? '100%' : '-8rem',
+                      }}
+                    />
 
-                  {/* Content */}
-                  <div className="flex-1 pb-8">
-                    <div className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all hover:scale-105">
-                      <h3 className="font-display text-2xl font-semibold mb-3">{item.title}</h3>
-                      <p className="text-muted-foreground">{item.description}</p>
+                    {/* Icon */}
+                    <div className="flex justify-center mb-6">
+                      <div className="w-20 h-20 rounded-full bg-card border-4 border-primary flex items-center justify-center text-4xl glow-effect z-10 shadow-lg">
+                        {item.icon}
+                      </div>
+                    </div>
+
+                    {/* Content Card */}
+                    <div className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all hover:scale-105 shadow-lg">
+                      <h3 className="font-display text-xl font-semibold mb-3 text-center">{item.title}</h3>
+                      <p className="text-muted-foreground text-sm text-center leading-relaxed">{item.description}</p>
                     </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
+            </div>
+
+            {/* Vertical Timeline - Mobile/Tablet */}
+            <div className="lg:hidden relative">
+              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary to-transparent"></div>
+
+              <div className="space-y-12">
+                {timeline.map((item, index) => (
+                  <div
+                    key={index}
+                    className="relative flex gap-6 sm:gap-8 animate-fade-in"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-card border-2 border-primary flex items-center justify-center text-3xl glow-effect z-10">
+                      {item.icon}
+                    </div>
+
+                    <div className="flex-1 pb-8">
+                      <div className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all hover:scale-105">
+                        <h3 className="font-display text-2xl font-semibold mb-3">{item.title}</h3>
+                        <p className="text-muted-foreground">{item.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="absolute inset-0 pixelated-dots-layer2 pointer-events-none"></div>
       <div className="absolute inset-0 pixelated-dots-layer3 pointer-events-none"></div>
 
-      <div className="container relative z-10 mx-auto px-6 sm:px-8 lg:px-6 py-20">
+      <div className="container relative z-10 mx-auto px-4 py-20">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           {/* Content */}
           <div className="flex-1 text-center lg:text-left animate-fade-in">

@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <footer className="relative border-t border-border bg-background">
-      <div className="container mx-auto px-6 sm:px-8 lg:px-12 py-12 sm:py-16">
+      <div className="container mx-auto px-4 py-12 sm:py-16">
         {/* Top Section: Brand on left, Resources on right */}
         <div className="flex flex-col md:flex-row justify-between mb-12 gap-12">
           {/* Brand */}

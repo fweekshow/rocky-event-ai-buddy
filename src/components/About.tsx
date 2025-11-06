@@ -6,8 +6,8 @@ const About = () => {
       icon: "🚀",
     },
     {
-      title: "Basecamp 001",
-      description: "Successfully deployed at Base's Basecamp 001, helping organize and manage events seamlessly.",
+      title: "Basecamp 002",
+      description: "Successfully deployed at Base's Basecamp 002, helping organize and manage events seamlessly.",
       icon: "⛺",
     },
     {

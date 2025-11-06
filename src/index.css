@@ -39,26 +39,24 @@
     --gradient-primary: linear-gradient(135deg, hsl(216 72% 44%), hsl(213 100% 77%));
     --gradient-secondary: linear-gradient(135deg, hsl(51 100% 50%), hsl(38 63% 40%));
     --gradient-dark: linear-gradient(180deg, hsl(0 0% 3%), hsl(0 0% 10%));
-    
+
     --shadow-glow: 0 0 40px hsl(216 72% 44% / 0.3);
     --shadow-strong: 0 20px 60px -10px hsl(216 72% 44% / 0.4);
-    
+
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
 @layer base {
-  // * {
-  //   // @apply border-border;
-  // }
-
   html {
     scroll-behavior: smooth;
   }
 
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
   }
 }
 
@@ -67,7 +65,7 @@
     @apply bg-clip-text text-transparent;
     background-image: var(--gradient-primary);
   }
-  
+
   .glow-effect {
     box-shadow: var(--shadow-glow);
   }

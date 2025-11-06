@@ -15,16 +15,11 @@ const Hero = () => {
         className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-[120px] animate-float"
         style={{ animationDelay: "1s" }}
       ></div>
-      
-      {/* Pixelated Dots - Multiple Layers */}
-      <div className="absolute inset-0 pixelated-dots pointer-events-none z-[5]"></div>
-      <div className="absolute inset-0 pixelated-dots-layer2 pointer-events-none z-[5]"></div>
-      <div className="absolute inset-0 pixelated-dots-layer3 pointer-events-none z-[5]"></div>
 
-      <div className="container relative mx-auto px-4 py-20 z-10">
+      <div className="container relative z-10 mx-auto px-6 sm:px-8 lg:px-6 py-20">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           {/* Content */}
-          <div className="flex-1 text-center lg:text-left animate-fade-in relative z-20 bg-background/80">
+          <div className="flex-1 text-center lg:text-left animate-fade-in">
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Your AI Event Copilot
               <span className="block gradient-text mt-2">Born on Base</span>
@@ -53,13 +48,13 @@ const Hero = () => {
           </div>
 
           {/* Rocky Mascot */}
-          <div className="flex-1 flex justify-center lg:justify-end animate-fade-in relative z-30" style={{ animationDelay: "0.2s" }}>
+          <div className="flex-1 flex justify-center lg:justify-end animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <div className="relative">
               <div className="absolute inset-0 bg-secondary/30 rounded-full blur-3xl animate-glow"></div>
               <img
                 src={rockyMascot}
                 alt="Rocky - AI Event Assistant Mascot"
-                className="relative w-64 sm:w-80 lg:w-96 h-auto rounded-full animate-float z-30"
+                className="relative w-64 sm:w-80 lg:w-96 h-auto rounded-full animate-float"
               />
             </div>
           </div>

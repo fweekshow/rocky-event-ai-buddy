@@ -35,7 +35,7 @@ const AttendeesSection = () => {
 
   return (
     <section id="attendees" className="py-20 sm:py-32 relative">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-primary">
             For Attendees

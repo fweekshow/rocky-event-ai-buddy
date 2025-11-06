@@ -29,13 +29,18 @@ const Hero = () => {
               <p>Turning every event into a connected experience.</p>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="text-lg px-8 py-6 glow-effect hover:scale-105 transition-transform">
+              <Button 
+                size="lg" 
+                className="text-lg px-8 py-6 glow-effect hover:scale-105 transition-transform"
+                onClick={() => document.getElementById('detailed-features')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 For Attendees
               </Button>
               <Button
                 size="lg"
                 variant="secondary"
                 className="text-lg px-8 py-6 hover:scale-105 transition-transform"
+                onClick={() => document.getElementById('detailed-features')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 For Sponsors
               </Button>

@@ -36,57 +36,50 @@ const About = () => {
 
         <div className="max-w-6xl mx-auto px-4 sm:px-8">
           <div className="relative">
-            {/* Winding Road Path - Desktop */}
-            <div className="hidden lg:block absolute left-0 right-0 top-1/2 -translate-y-1/2 h-1">
-              <svg className="w-full h-64" viewBox="0 0 1200 256" preserveAspectRatio="none" style={{ position: 'absolute', top: '-128px' }}>
-                <path
-                  d="M 0,128 Q 300,50 400,128 T 800,128 Q 1000,180 1200,128"
-                  stroke="hsl(var(--primary))"
-                  strokeWidth="3"
-                  fill="none"
-                  strokeDasharray="10,5"
-                  opacity="0.5"
-                />
-              </svg>
-            </div>
-
             {/* Horizontal Timeline - Desktop */}
-            <div className="hidden lg:grid lg:grid-cols-4 gap-8 relative">
-              {timeline.map((item, index) => {
-                const isUp = index % 2 === 0;
-                return (
+            <div className="hidden lg:block relative pt-8">
+              {/* Content Cards at Top */}
+              <div className="grid grid-cols-4 gap-8 mb-16">
+                {timeline.map((item, index) => (
                   <div
                     key={index}
-                    className="relative animate-fade-in"
-                    style={{ 
-                      animationDelay: `${index * 0.15}s`,
-                      marginTop: isUp ? '0' : '16rem',
-                    }}
+                    className="animate-fade-in"
+                    style={{ animationDelay: `${index * 0.15}s` }}
                   >
-                    {/* Connecting Line */}
-                    <div 
-                      className="absolute left-1/2 -translate-x-1/2 w-0.5 bg-primary/50"
-                      style={{
-                        height: '8rem',
-                        top: isUp ? '100%' : '-8rem',
-                      }}
-                    />
-
-                    {/* Icon */}
-                    <div className="flex justify-center mb-6">
-                      <div className="w-20 h-20 rounded-full bg-card border-4 border-primary flex items-center justify-center text-4xl glow-effect z-10 shadow-lg">
-                        {item.icon}
-                      </div>
-                    </div>
-
-                    {/* Content Card */}
                     <div className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all hover:scale-105 shadow-lg">
                       <h3 className="font-display text-xl font-semibold mb-3 text-center">{item.title}</h3>
                       <p className="text-muted-foreground text-sm text-center leading-relaxed">{item.description}</p>
                     </div>
                   </div>
-                );
-              })}
+                ))}
+              </div>
+
+              {/* Horizontal Line with Icons */}
+              <div className="relative">
+                {/* Main Horizontal Dash Line */}
+                <div className="absolute left-0 right-0 top-10 h-0.5 bg-gradient-to-r from-primary/50 via-primary to-primary/50"></div>
+                
+                {/* Icons and Connecting Lines */}
+                <div className="grid grid-cols-4 gap-8">
+                  {timeline.map((item, index) => (
+                    <div
+                      key={index}
+                      className="relative animate-fade-in"
+                      style={{ animationDelay: `${index * 0.15}s` }}
+                    >
+                      {/* Vertical Connecting Line to Card Above */}
+                      <div className="absolute left-1/2 -translate-x-1/2 w-0.5 bg-primary/50 h-16 -top-16"></div>
+
+                      {/* Icon on the Horizontal Line */}
+                      <div className="flex justify-center">
+                        <div className="w-20 h-20 rounded-full bg-card border-4 border-primary flex items-center justify-center text-4xl glow-effect z-10 shadow-lg">
+                          {item.icon}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
 
             {/* Vertical Timeline - Mobile/Tablet */}

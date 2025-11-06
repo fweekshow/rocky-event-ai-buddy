@@ -69,16 +69,17 @@ const About = () => {
                     }}
                   >
                     {/* Icon */}
-                    <div className="flex justify-center mb-6">
-                      <div className="w-20 h-20 rounded-full bg-card border-4 border-primary flex items-center justify-center text-4xl glow-effect z-10 shadow-lg">
-                        {item.icon}
-                      </div>
-                    </div>
 
                     {/* Content Card */}
                     <div className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all hover:scale-105 shadow-lg">
                       <h3 className="font-display text-xl font-semibold mb-3 text-center">{item.title}</h3>
                       <p className="text-muted-foreground text-sm text-center leading-relaxed">{item.description}</p>
+                    </div>
+
+                    <div className="flex justify-center mb-6">
+                      <div className="w-20 h-20 rounded-full bg-card border-4 border-primary flex items-center justify-center text-4xl glow-effect z-10 shadow-lg">
+                        {item.icon}
+                      </div>
                     </div>
                   </div>
                 );

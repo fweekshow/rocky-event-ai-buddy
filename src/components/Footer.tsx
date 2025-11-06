@@ -1,13 +1,8 @@
-import { Github, Twitter, ExternalLink } from "lucide-react";
+import { Github, X, ExternalLink } from "lucide-react";
 import rockyMascot from "@/assets/rocky-mascot.jpg";
 
 const Footer = () => {
   const links = {
-    product: [
-      { name: "Features", href: "#features" },
-      { name: "Treasure Hunt", href: "#treasure-hunt" },
-      { name: "Token", href: "#token" },
-    ],
     resources: [
       { name: "Base.org", href: "https://base.org", external: true },
       { name: "Base Batches", href: "https://www.basebatches.xyz", external: true },
@@ -15,7 +10,7 @@ const Footer = () => {
     ],
     social: [
       { name: "Twitter", icon: Twitter, href: "https://x.com/rockyeventagent" },
-      { name: "GitHub", icon: Github, href: "#" },
+      { name: "GitHub", icon: X, href: "#" },
     ],
   };
 
@@ -47,20 +42,6 @@ const Footer = () => {
                 </a>
               ))}
             </div>
-          </div>
-
-          {/* Product Links */}
-          <div>
-            <h3 className="font-display font-semibold mb-4">Product</h3>
-            <ul className="space-y-3">
-              {links.product.map((link) => (
-                <li key={link.name}>
-                  <a href={link.href} className="text-muted-foreground hover:text-foreground transition-colors">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
           </div>
 
           {/* Resources Links */}

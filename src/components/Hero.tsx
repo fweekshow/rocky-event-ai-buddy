@@ -32,7 +32,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="text-lg px-8 py-6 glow-effect hover:scale-105 transition-transform"
-                onClick={() => document.getElementById('detailed-features')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => document.getElementById('attendees')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 For Attendees
               </Button>
@@ -40,7 +40,7 @@ const Hero = () => {
                 size="lg"
                 variant="secondary"
                 className="text-lg px-8 py-6 hover:scale-105 transition-transform"
-                onClick={() => document.getElementById('detailed-features')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => document.getElementById('sponsors')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 For Sponsors
               </Button>

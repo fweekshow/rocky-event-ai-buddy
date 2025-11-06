@@ -50,56 +50,55 @@ const About = () => {
                 />
               </svg>
 
-              {/* Timeline Items */}
-              <div className="relative grid grid-cols-4 gap-8">
+              {/* Timeline Items with Icons on Path */}
+              <div className="relative h-full">
                 {timeline.map((item, index) => {
                   const isUp = index % 2 === 0;
-                  const positions = [
-                    { x: '8%', y: '50%' },
-                    { x: '33%', y: '50%' },
-                    { x: '58%', y: '50%' },
-                    { x: '83%', y: '50%' }
+                  // Position icons on the curve path
+                  const iconPositions = [
+                    { left: '8%', top: '50%' },      // Start
+                    { left: '33%', top: '25%' },     // Peak (curve up)
+                    { left: '58%', top: '50%' },     // Middle
+                    { left: '91%', top: '75%' }      // End (curve down)
                   ];
                   
                   return (
                     <div
                       key={index}
-                      className="relative animate-fade-in"
+                      className="absolute animate-fade-in"
                       style={{ 
                         animationDelay: `${index * 0.15}s`,
+                        left: iconPositions[index].left,
+                        top: iconPositions[index].top,
+                        transform: 'translate(-50%, -50%)',
                       }}
                     >
+                      {/* Icon on Dotted Line */}
+                      <div className="relative z-10">
+                        <div className="w-20 h-20 rounded-full bg-card border-4 border-primary flex items-center justify-center text-4xl glow-effect shadow-lg">
+                          {item.icon}
+                        </div>
+                      </div>
+
+                      {/* Connecting Line to Card */}
+                      <div 
+                        className="absolute left-1/2 -translate-x-1/2 w-0.5 bg-primary/50 z-0"
+                        style={{
+                          height: '120px',
+                          top: isUp ? '-120px' : '80px',
+                        }}
+                      />
+
                       {/* Content Card */}
                       <div 
-                        className="relative"
+                        className="absolute left-1/2 -translate-x-1/2 w-64"
                         style={{
-                          marginTop: isUp ? '0' : '280px',
+                          top: isUp ? '-220px' : '200px',
                         }}
                       >
                         <div className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all hover:scale-105 shadow-lg">
                           <h3 className="font-display text-xl font-semibold mb-3 text-center">{item.title}</h3>
                           <p className="text-muted-foreground text-sm text-center leading-relaxed">{item.description}</p>
-                        </div>
-                      </div>
-
-                      {/* Icon on Path */}
-                      <div 
-                        className="absolute left-1/2 -translate-x-1/2 z-10"
-                        style={{
-                          top: isUp ? 'calc(100% + 60px)' : '60px',
-                        }}
-                      >
-                        {/* Connecting Line */}
-                        <div 
-                          className="absolute left-1/2 -translate-x-1/2 w-0.5 bg-primary/50"
-                          style={{
-                            height: '60px',
-                            top: isUp ? '-60px' : '80px',
-                          }}
-                        />
-                        
-                        <div className="w-20 h-20 rounded-full bg-card border-4 border-primary flex items-center justify-center text-4xl glow-effect shadow-lg">
-                          {item.icon}
                         </div>
                       </div>
                     </div>

@@ -151,10 +151,9 @@ const Navbar = () => {
           </div>
 
           <div className="space-y-3 pt-4 border-t border-border">
-            <Button variant="outline" className="w-full border-primary/50 hover:bg-primary/10">
-              Meet Rocky
+            <Button className="w-full glow-effect" onClick={() => window.open("https://join.base.app/", "_blank")}>
+              Explore on Base
             </Button>
-            <Button className="w-full glow-effect">Explore on Base</Button>
           </div>
         </div>
       </div>

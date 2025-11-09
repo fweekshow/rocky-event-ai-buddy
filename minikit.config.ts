@@ -2,9 +2,10 @@ const ROOT_URL = import.meta.env.VITE_APP_URL || window.location.origin;
 
 export const minikitConfig = {
   accountAssociation: {
-    header: "",
-    payload: "",
-    signature: "",
+    header:
+      "eyJmaWQiOjE0NTU1NTgsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgyRWIwYmYyMGI2N2I3MTYzMEU1OTJhMGU2MDFDMDA3N2M1MTczREZEIn0",
+    payload: "eyJkb21haW4iOiJyb2NreS1ldmVudC1haS1idWRkeS5sb3ZhYmxlLmFwcCJ9",
+    signature: "bxQjQM7JelX0n4IRrPGcrxkxyaBThTUK0/GR3S5bBKgUJYw7TEk0wU9o0k/6IkBBIHyAVbkd+8s4kKqLLo+WNBw=",
   },
   miniapp: {
     version: "1",

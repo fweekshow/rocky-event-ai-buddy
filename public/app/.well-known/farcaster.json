@@ -1,0 +1,15 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "Rocky",
+    "iconUrl": "/rocky.jpg",
+    "splashImageUrl": "/rocky.jpg",
+    "splashBackgroundColor": "#000000",
+    "homeUrl": "/"
+  }
+}

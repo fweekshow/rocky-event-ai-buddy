@@ -14,7 +14,7 @@
     "splashImageUrl": "https://rocky-event-ai-buddy.lovable.app/rocky.jpg",
     "splashBackgroundColor": "#000000",
     "homeUrl": "https://rocky-event-ai-buddy.lovable.app/",
-    "webhookUrl": "https://rocky.ai/api/webhook",
+    "webhookUrl": "https://rocky-event-ai-buddy.lovable.app/api/webhook",
     "primaryCategory": "social",
     "tags": ["marketing", "crm", "events", "leadgen", "ai"],
     "heroImageUrl": "https://rocky-event-ai-buddy.lovable.app/rocky.jpg",

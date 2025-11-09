@@ -2,7 +2,6 @@ const ROOT_URL = import.meta.env.VITE_APP_URL || window.location.origin;
 
 export const minikitConfig = {
   accountAssociation: {
-    // this will be added in step 5
     header: "",
     payload: "",
     signature: "",
@@ -19,7 +18,7 @@ export const minikitConfig = {
     homeUrl: ROOT_URL,
     webhookUrl: `${ROOT_URL}/api/webhook`,
     primaryCategory: "social",
-    tags: ["marketing", "ads", "quickstart", "waitlist"],
+    tags: ["marketing", "crm", "events", "leadgen", "ai"],
     heroImageUrl: `${ROOT_URL}/rocky.jpg`,
     tagline: "",
     ogTitle: "",

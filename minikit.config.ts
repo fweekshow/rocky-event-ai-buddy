@@ -25,4 +25,7 @@ export const minikitConfig = {
     ogDescription: "",
     ogImageUrl: `${ROOT_URL}/rocky.jpg`,
   },
+  baseBuilder: {
+    ownerAddress: "0x1cE2aF6f886b353c21CcE43e3b02a93e13E0F740",
+  },
 } as const;

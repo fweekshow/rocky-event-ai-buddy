@@ -9,18 +9,18 @@
     "name": "Rocky",
     "subtitle": "AI Event Copilot",
     "description": "Your AI Event Copilot Born on Base",
-    "screenshotUrls": ["https://rocky-event-ai-buddy.lovable.app/rocky.jpg"],
-    "iconUrl": "https://rocky-event-ai-buddy.lovable.app/rocky.jpg",
-    "splashImageUrl": "https://rocky-event-ai-buddy.lovable.app/rocky.jpg",
+    "screenshotUrls": ["https://rocky.wtf/rocky.jpg"],
+    "iconUrl": "https://rocky.wtf/rocky.jpg",
+    "splashImageUrl": "https://rocky.wtf/rocky.jpg",
     "splashBackgroundColor": "#080808",
-    "homeUrl": "https://rocky-event-ai-buddy.lovable.app",
+    "homeUrl": "https://rocky.wtf",
     "primaryCategory": "social",
     "tags": ["social", "utility", "productivity", "social", "entertainment"],
-    "heroImageUrl": "https://rocky-event-ai-buddy.lovable.app/rocky.jpg",
+    "heroImageUrl": "https://rocky.wtf/rocky.jpg",
     "ogTitle": "Rocky on Base",
     "ogDescription": "Rocky: AI Event Copilot Born on Base",
-    "ogImageUrl": "https://rocky-event-ai-buddy.lovable.app/rocky.jpg",
-    "imageUrl": "https://rocky-event-ai-buddy.lovable.app/rocky.jpg"
+    "ogImageUrl": "https://rocky.wtf/rocky.jpg",
+    "imageUrl": "https://rocky.wtf/rocky.jpg"
   },
   "baseBuilder": {
     "ownerAddress": "0x1cE2aF6f886b353c21CcE43e3b02a93e13E0F740"
